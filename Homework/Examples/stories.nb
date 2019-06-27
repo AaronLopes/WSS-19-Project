@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    654905,      12066]
-NotebookOptionsPosition[    643553,      11875]
-NotebookOutlinePosition[    643925,      11891]
-CellTagsIndexPosition[    643882,      11888]
+NotebookDataLength[    655172,      12083]
+NotebookOptionsPosition[    643833,      11892]
+NotebookOutlinePosition[    644196,      11908]
+CellTagsIndexPosition[    644153,      11905]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -84,18 +84,17 @@ Cell[BoxData[
   "\[IndentingNewLine]", "]"}]], "Input",
  CellChangeTimes->{{3.749343006480132*^9, 3.749343175219225*^9}, {
   3.749343208095147*^9, 3.7493432830781755`*^9}, {3.7493438536272745`*^9, 
-  3.7493438571786184`*^9}, {3.7494081818371596`*^9, 
-  3.7494081869818597`*^9}},ExpressionUUID->"3019d8cb-251d-4df4-98d1-\
-3787d47392d2"],
+  3.7493438571786184`*^9}, {3.7494081818371596`*^9, 3.7494081869818597`*^9}},
+ CellLabel->"In[69]:=",ExpressionUUID->"3019d8cb-251d-4df4-98d1-3787d47392d2"],
 
 Cell[BoxData[
  GraphicsBox[{CircleBox[{0, 0}, 4], CircleBox[{0, 0}, 3.7], 
    ArrowBox[{{0, 0}, {1, -2.5}}], ArrowBox[{{0, 0}, {1, 3.5}}], 
    {RGBColor[1, 0, 0], LineBox[{{0, 0}, {-2, -2}}]}}]], "Output",
  CellChangeTimes->{{3.749343167295938*^9, 3.7493431765381527`*^9}, {
-  3.749343221032864*^9, 3.749343283468731*^9}, {3.7493438542921352`*^9, 
-  3.7493438577679667`*^9}},ExpressionUUID->"d3b34cbc-7939-4dcb-825d-\
-1b52cb70f51b"]
+   3.749343221032864*^9, 3.749343283468731*^9}, {3.7493438542921352`*^9, 
+   3.7493438577679667`*^9}, 3.770563444186131*^9},
+ CellLabel->"Out[69]=",ExpressionUUID->"efa1fb5f-ee6c-4bbd-ac69-41b894bb1197"]
 }, Open  ]],
 
 Cell["\<\
@@ -203,9 +202,8 @@ Cell[BoxData[{
     "]"}]}], "]"}]}], "Input",
  CellChangeTimes->{{3.749343006480132*^9, 3.749343175219225*^9}, {
   3.749343208095147*^9, 3.7493432830781755`*^9}, {3.7493434886474905`*^9, 
-  3.7493435001973763`*^9}, {3.749343728015583*^9, 
-  3.749343865117215*^9}},ExpressionUUID->"a9c5d35c-444b-44bc-a224-\
-7f65c8760022"],
+  3.7493435001973763`*^9}, {3.749343728015583*^9, 3.749343865117215*^9}},
+ CellLabel->"In[72]:=",ExpressionUUID->"a9c5d35c-444b-44bc-a224-7f65c8760022"],
 
 Cell[BoxData[
  GraphicsBox[{CircleBox[{0, 0}, 4], CircleBox[{0, 0}, 3.7], 
@@ -214,9 +212,9 @@ Cell[BoxData[
    {RGBColor[1, 0, 0], LineBox[{{-0.4, -0.4}, {-2.4, -2.4}}]}}]], "Output",
  CellChangeTimes->{
   3.7493435009441357`*^9, {3.7493437446651936`*^9, 3.749343779818959*^9}, {
-   3.749343834014642*^9, 
-   3.749343865746546*^9}},ExpressionUUID->"5ea27bd2-0c1d-485d-8640-\
-0654a2d7b7be"]
+   3.749343834014642*^9, 3.749343865746546*^9}, {3.7705634570492897`*^9, 
+   3.7705634583711863`*^9}},
+ CellLabel->"Out[73]=",ExpressionUUID->"20f380df-3066-4340-8e5c-05e34a472bda"]
 }, Open  ]],
 
 Cell[TextData[{
@@ -469,7 +467,7 @@ Concerto #5\\Beethoven - 05 Piano Concerto, 1 Allegro.mp3", "Real32",
      Audio`AudioGUI[
      2, Audio`AudioObjects`audioID$$, Audio`AudioObjects`buttonState$$, 
       Audio`AudioObjects`audio$$], StandardForm],
-    ImageSizeCache->{136., {57., 63.}},
+    ImageSizeCache->{136., {40., 46.}},
     TrackedSymbols:>{}],
    Deinitialization:>(Clear[Audio`AudioObjects`newAudio$$]; 
     Audio`ClearRef[Audio`AudioObjects`audioID$$]),
@@ -538,7 +536,7 @@ Cell[BoxData[
      Audio`AudioGUI[
      2, Audio`AudioObjects`audioID$$, Audio`AudioObjects`buttonState$$, 
       Audio`AudioObjects`audio$$], StandardForm],
-    ImageSizeCache->{136., {57., 63.}},
+    ImageSizeCache->{136., {40., 46.}},
     TrackedSymbols:>{}],
    Deinitialization:>(Clear[Audio`AudioObjects`newAudio$$]; 
     Audio`ClearRef[Audio`AudioObjects`audioID$$]),
@@ -602,7 +600,7 @@ wav", "Real32", Appearance -> Automatic, AudioOutputDevice -> Automatic,
        Audio`AudioGUI[
        2, Audio`AudioObjects`audioID$$, Audio`AudioObjects`buttonState$$, 
         Audio`AudioObjects`audio$$], StandardForm],
-      ImageSizeCache->{136., {57., 63.}},
+      ImageSizeCache->{136., {40., 46.}},
       TrackedSymbols:>{}],
      Deinitialization:>(Clear[Audio`AudioObjects`newAudio$$]; 
       Audio`ClearRef[Audio`AudioObjects`audioID$$]),
@@ -630,7 +628,7 @@ wav", "Real32", Appearance -> Automatic, AudioOutputDevice -> Automatic,
        Audio`AudioGUI[
        2, Audio`AudioObjects`audioID$$, Audio`AudioObjects`buttonState$$, 
         Audio`AudioObjects`audio$$], StandardForm],
-      ImageSizeCache->{136., {57., 63.}},
+      ImageSizeCache->{136., {40., 46.}},
       TrackedSymbols:>{}],
      Deinitialization:>(Clear[Audio`AudioObjects`newAudio$$]; 
       Audio`ClearRef[Audio`AudioObjects`audioID$$]),
@@ -658,7 +656,7 @@ wav", "Real32", Appearance -> Automatic, AudioOutputDevice -> Automatic,
        Audio`AudioGUI[
        2, Audio`AudioObjects`audioID$$, Audio`AudioObjects`buttonState$$, 
         Audio`AudioObjects`audio$$], StandardForm],
-      ImageSizeCache->{136., {57., 63.}},
+      ImageSizeCache->{136., {40., 46.}},
       TrackedSymbols:>{}],
      Deinitialization:>(Clear[Audio`AudioObjects`newAudio$$]; 
       Audio`ClearRef[Audio`AudioObjects`audioID$$]),
@@ -686,7 +684,7 @@ wav", "Real32", Appearance -> Automatic, AudioOutputDevice -> Automatic,
        Audio`AudioGUI[
        2, Audio`AudioObjects`audioID$$, Audio`AudioObjects`buttonState$$, 
         Audio`AudioObjects`audio$$], StandardForm],
-      ImageSizeCache->{136., {57., 63.}},
+      ImageSizeCache->{136., {40., 46.}},
       TrackedSymbols:>{}],
      Deinitialization:>(Clear[Audio`AudioObjects`newAudio$$]; 
       Audio`ClearRef[Audio`AudioObjects`audioID$$]),
@@ -714,7 +712,7 @@ wav", "Real32", Appearance -> Automatic, AudioOutputDevice -> Automatic,
        Audio`AudioGUI[
        2, Audio`AudioObjects`audioID$$, Audio`AudioObjects`buttonState$$, 
         Audio`AudioObjects`audio$$], StandardForm],
-      ImageSizeCache->{136., {57., 63.}},
+      ImageSizeCache->{136., {40., 46.}},
       TrackedSymbols:>{}],
      Deinitialization:>(Clear[Audio`AudioObjects`newAudio$$]; 
       Audio`ClearRef[Audio`AudioObjects`audioID$$]),
@@ -742,7 +740,7 @@ wav", "Real32", Appearance -> Automatic, AudioOutputDevice -> Automatic,
        Audio`AudioGUI[
        2, Audio`AudioObjects`audioID$$, Audio`AudioObjects`buttonState$$, 
         Audio`AudioObjects`audio$$], StandardForm],
-      ImageSizeCache->{136., {57., 63.}},
+      ImageSizeCache->{136., {40., 46.}},
       TrackedSymbols:>{}],
      Deinitialization:>(Clear[Audio`AudioObjects`newAudio$$]; 
       Audio`ClearRef[Audio`AudioObjects`audioID$$]),
@@ -770,7 +768,7 @@ wav", "Real32", Appearance -> Automatic, AudioOutputDevice -> Automatic,
        Audio`AudioGUI[
        2, Audio`AudioObjects`audioID$$, Audio`AudioObjects`buttonState$$, 
         Audio`AudioObjects`audio$$], StandardForm],
-      ImageSizeCache->{136., {57., 63.}},
+      ImageSizeCache->{136., {40., 46.}},
       TrackedSymbols:>{}],
      Deinitialization:>(Clear[Audio`AudioObjects`newAudio$$]; 
       Audio`ClearRef[Audio`AudioObjects`audioID$$]),
@@ -798,7 +796,7 @@ wav", "Real32", Appearance -> Automatic, AudioOutputDevice -> Automatic,
        Audio`AudioGUI[
        2, Audio`AudioObjects`audioID$$, Audio`AudioObjects`buttonState$$, 
         Audio`AudioObjects`audio$$], StandardForm],
-      ImageSizeCache->{136., {57., 63.}},
+      ImageSizeCache->{136., {40., 46.}},
       TrackedSymbols:>{}],
      Deinitialization:>(Clear[Audio`AudioObjects`newAudio$$]; 
       Audio`ClearRef[Audio`AudioObjects`audioID$$]),
@@ -826,7 +824,7 @@ wav", "Real32", Appearance -> Automatic, AudioOutputDevice -> Automatic,
        Audio`AudioGUI[
        2, Audio`AudioObjects`audioID$$, Audio`AudioObjects`buttonState$$, 
         Audio`AudioObjects`audio$$], StandardForm],
-      ImageSizeCache->{136., {57., 63.}},
+      ImageSizeCache->{136., {40., 46.}},
       TrackedSymbols:>{}],
      Deinitialization:>(Clear[Audio`AudioObjects`newAudio$$]; 
       Audio`ClearRef[Audio`AudioObjects`audioID$$]),
@@ -854,7 +852,7 @@ wav", "Real32", Appearance -> Automatic, AudioOutputDevice -> Automatic,
        Audio`AudioGUI[
        2, Audio`AudioObjects`audioID$$, Audio`AudioObjects`buttonState$$, 
         Audio`AudioObjects`audio$$], StandardForm],
-      ImageSizeCache->{136., {57., 63.}},
+      ImageSizeCache->{136., {40., 46.}},
       TrackedSymbols:>{}],
      Deinitialization:>(Clear[Audio`AudioObjects`newAudio$$]; 
       Audio`ClearRef[Audio`AudioObjects`audioID$$]),
@@ -882,7 +880,7 @@ wav", "Real32", Appearance -> Automatic, AudioOutputDevice -> Automatic,
        Audio`AudioGUI[
        2, Audio`AudioObjects`audioID$$, Audio`AudioObjects`buttonState$$, 
         Audio`AudioObjects`audio$$], StandardForm],
-      ImageSizeCache->{136., {57., 63.}},
+      ImageSizeCache->{136., {40., 46.}},
       TrackedSymbols:>{}],
      Deinitialization:>(Clear[Audio`AudioObjects`newAudio$$]; 
       Audio`ClearRef[Audio`AudioObjects`audioID$$]),
@@ -910,7 +908,7 @@ wav", "Real32", Appearance -> Automatic, AudioOutputDevice -> Automatic,
        Audio`AudioGUI[
        2, Audio`AudioObjects`audioID$$, Audio`AudioObjects`buttonState$$, 
         Audio`AudioObjects`audio$$], StandardForm],
-      ImageSizeCache->{136., {57., 63.}},
+      ImageSizeCache->{136., {40., 46.}},
       TrackedSymbols:>{}],
      Deinitialization:>(Clear[Audio`AudioObjects`newAudio$$]; 
       Audio`ClearRef[Audio`AudioObjects`audioID$$]),
@@ -938,7 +936,7 @@ wav", "Real32", Appearance -> Automatic, AudioOutputDevice -> Automatic,
        Audio`AudioGUI[
        2, Audio`AudioObjects`audioID$$, Audio`AudioObjects`buttonState$$, 
         Audio`AudioObjects`audio$$], StandardForm],
-      ImageSizeCache->{136., {57., 63.}},
+      ImageSizeCache->{136., {40., 46.}},
       TrackedSymbols:>{}],
      Deinitialization:>(Clear[Audio`AudioObjects`newAudio$$]; 
       Audio`ClearRef[Audio`AudioObjects`audioID$$]),
@@ -966,7 +964,7 @@ wav", "Real32", Appearance -> Automatic, AudioOutputDevice -> Automatic,
        Audio`AudioGUI[
        2, Audio`AudioObjects`audioID$$, Audio`AudioObjects`buttonState$$, 
         Audio`AudioObjects`audio$$], StandardForm],
-      ImageSizeCache->{136., {57., 63.}},
+      ImageSizeCache->{136., {40., 46.}},
       TrackedSymbols:>{}],
      Deinitialization:>(Clear[Audio`AudioObjects`newAudio$$]; 
       Audio`ClearRef[Audio`AudioObjects`audioID$$]),
@@ -994,7 +992,7 @@ wav", "Real32", Appearance -> Automatic, AudioOutputDevice -> Automatic,
        Audio`AudioGUI[
        2, Audio`AudioObjects`audioID$$, Audio`AudioObjects`buttonState$$, 
         Audio`AudioObjects`audio$$], StandardForm],
-      ImageSizeCache->{136., {57., 63.}},
+      ImageSizeCache->{136., {40., 46.}},
       TrackedSymbols:>{}],
      Deinitialization:>(Clear[Audio`AudioObjects`newAudio$$]; 
       Audio`ClearRef[Audio`AudioObjects`audioID$$]),
@@ -1022,7 +1020,7 @@ wav", "Real32", Appearance -> Automatic, AudioOutputDevice -> Automatic,
        Audio`AudioGUI[
        2, Audio`AudioObjects`audioID$$, Audio`AudioObjects`buttonState$$, 
         Audio`AudioObjects`audio$$], StandardForm],
-      ImageSizeCache->{136., {57., 63.}},
+      ImageSizeCache->{136., {40., 46.}},
       TrackedSymbols:>{}],
      Deinitialization:>(Clear[Audio`AudioObjects`newAudio$$]; 
       Audio`ClearRef[Audio`AudioObjects`audioID$$]),
@@ -1050,7 +1048,7 @@ wav", "Real32", Appearance -> Automatic, AudioOutputDevice -> Automatic,
        Audio`AudioGUI[
        2, Audio`AudioObjects`audioID$$, Audio`AudioObjects`buttonState$$, 
         Audio`AudioObjects`audio$$], StandardForm],
-      ImageSizeCache->{136., {57., 63.}},
+      ImageSizeCache->{136., {40., 46.}},
       TrackedSymbols:>{}],
      Deinitialization:>(Clear[Audio`AudioObjects`newAudio$$]; 
       Audio`ClearRef[Audio`AudioObjects`audioID$$]),
@@ -1078,7 +1076,7 @@ wav", "Real32", Appearance -> Automatic, AudioOutputDevice -> Automatic,
        Audio`AudioGUI[
        2, Audio`AudioObjects`audioID$$, Audio`AudioObjects`buttonState$$, 
         Audio`AudioObjects`audio$$], StandardForm],
-      ImageSizeCache->{136., {57., 63.}},
+      ImageSizeCache->{136., {40., 46.}},
       TrackedSymbols:>{}],
      Deinitialization:>(Clear[Audio`AudioObjects`newAudio$$]; 
       Audio`ClearRef[Audio`AudioObjects`audioID$$]),
@@ -1106,7 +1104,7 @@ wav", "Real32", Appearance -> Automatic, AudioOutputDevice -> Automatic,
        Audio`AudioGUI[
        2, Audio`AudioObjects`audioID$$, Audio`AudioObjects`buttonState$$, 
         Audio`AudioObjects`audio$$], StandardForm],
-      ImageSizeCache->{136., {57., 63.}},
+      ImageSizeCache->{136., {40., 46.}},
       TrackedSymbols:>{}],
      Deinitialization:>(Clear[Audio`AudioObjects`newAudio$$]; 
       Audio`ClearRef[Audio`AudioObjects`audioID$$]),
@@ -1134,7 +1132,7 @@ wav", "Real32", Appearance -> Automatic, AudioOutputDevice -> Automatic,
        Audio`AudioGUI[
        2, Audio`AudioObjects`audioID$$, Audio`AudioObjects`buttonState$$, 
         Audio`AudioObjects`audio$$], StandardForm],
-      ImageSizeCache->{136., {57., 63.}},
+      ImageSizeCache->{136., {40., 46.}},
       TrackedSymbols:>{}],
      Deinitialization:>(Clear[Audio`AudioObjects`newAudio$$]; 
       Audio`ClearRef[Audio`AudioObjects`audioID$$]),
@@ -1162,7 +1160,7 @@ wav", "Real32", Appearance -> Automatic, AudioOutputDevice -> Automatic,
        Audio`AudioGUI[
        2, Audio`AudioObjects`audioID$$, Audio`AudioObjects`buttonState$$, 
         Audio`AudioObjects`audio$$], StandardForm],
-      ImageSizeCache->{136., {57., 63.}},
+      ImageSizeCache->{136., {40., 46.}},
       TrackedSymbols:>{}],
      Deinitialization:>(Clear[Audio`AudioObjects`newAudio$$]; 
       Audio`ClearRef[Audio`AudioObjects`audioID$$]),
@@ -1190,7 +1188,7 @@ wav", "Real32", Appearance -> Automatic, AudioOutputDevice -> Automatic,
        Audio`AudioGUI[
        2, Audio`AudioObjects`audioID$$, Audio`AudioObjects`buttonState$$, 
         Audio`AudioObjects`audio$$], StandardForm],
-      ImageSizeCache->{136., {57., 63.}},
+      ImageSizeCache->{136., {40., 46.}},
       TrackedSymbols:>{}],
      Deinitialization:>(Clear[Audio`AudioObjects`newAudio$$]; 
       Audio`ClearRef[Audio`AudioObjects`audioID$$]),
@@ -1218,7 +1216,7 @@ wav", "Real32", Appearance -> Automatic, AudioOutputDevice -> Automatic,
        Audio`AudioGUI[
        2, Audio`AudioObjects`audioID$$, Audio`AudioObjects`buttonState$$, 
         Audio`AudioObjects`audio$$], StandardForm],
-      ImageSizeCache->{136., {57., 63.}},
+      ImageSizeCache->{136., {40., 46.}},
       TrackedSymbols:>{}],
      Deinitialization:>(Clear[Audio`AudioObjects`newAudio$$]; 
       Audio`ClearRef[Audio`AudioObjects`audioID$$]),
@@ -1246,7 +1244,7 @@ wav", "Real32", Appearance -> Automatic, AudioOutputDevice -> Automatic,
        Audio`AudioGUI[
        2, Audio`AudioObjects`audioID$$, Audio`AudioObjects`buttonState$$, 
         Audio`AudioObjects`audio$$], StandardForm],
-      ImageSizeCache->{136., {57., 63.}},
+      ImageSizeCache->{136., {40., 46.}},
       TrackedSymbols:>{}],
      Deinitialization:>(Clear[Audio`AudioObjects`newAudio$$]; 
       Audio`ClearRef[Audio`AudioObjects`audioID$$]),
@@ -1274,7 +1272,7 @@ wav", "Real32", Appearance -> Automatic, AudioOutputDevice -> Automatic,
        Audio`AudioGUI[
        2, Audio`AudioObjects`audioID$$, Audio`AudioObjects`buttonState$$, 
         Audio`AudioObjects`audio$$], StandardForm],
-      ImageSizeCache->{136., {57., 63.}},
+      ImageSizeCache->{136., {40., 46.}},
       TrackedSymbols:>{}],
      Deinitialization:>(Clear[Audio`AudioObjects`newAudio$$]; 
       Audio`ClearRef[Audio`AudioObjects`audioID$$]),
@@ -1302,7 +1300,7 @@ wav", "Real32", Appearance -> Automatic, AudioOutputDevice -> Automatic,
        Audio`AudioGUI[
        2, Audio`AudioObjects`audioID$$, Audio`AudioObjects`buttonState$$, 
         Audio`AudioObjects`audio$$], StandardForm],
-      ImageSizeCache->{136., {57., 63.}},
+      ImageSizeCache->{136., {40., 46.}},
       TrackedSymbols:>{}],
      Deinitialization:>(Clear[Audio`AudioObjects`newAudio$$]; 
       Audio`ClearRef[Audio`AudioObjects`audioID$$]),
@@ -1330,7 +1328,7 @@ wav", "Real32", Appearance -> Automatic, AudioOutputDevice -> Automatic,
        Audio`AudioGUI[
        2, Audio`AudioObjects`audioID$$, Audio`AudioObjects`buttonState$$, 
         Audio`AudioObjects`audio$$], StandardForm],
-      ImageSizeCache->{136., {57., 63.}},
+      ImageSizeCache->{136., {40., 46.}},
       TrackedSymbols:>{}],
      Deinitialization:>(Clear[Audio`AudioObjects`newAudio$$]; 
       Audio`ClearRef[Audio`AudioObjects`audioID$$]),
@@ -1358,7 +1356,7 @@ wav", "Real32", Appearance -> Automatic, AudioOutputDevice -> Automatic,
        Audio`AudioGUI[
        2, Audio`AudioObjects`audioID$$, Audio`AudioObjects`buttonState$$, 
         Audio`AudioObjects`audio$$], StandardForm],
-      ImageSizeCache->{136., {57., 63.}},
+      ImageSizeCache->{136., {40., 46.}},
       TrackedSymbols:>{}],
      Deinitialization:>(Clear[Audio`AudioObjects`newAudio$$]; 
       Audio`ClearRef[Audio`AudioObjects`audioID$$]),
@@ -1386,7 +1384,7 @@ wav", "Real32", Appearance -> Automatic, AudioOutputDevice -> Automatic,
        Audio`AudioGUI[
        2, Audio`AudioObjects`audioID$$, Audio`AudioObjects`buttonState$$, 
         Audio`AudioObjects`audio$$], StandardForm],
-      ImageSizeCache->{136., {57., 63.}},
+      ImageSizeCache->{136., {40., 46.}},
       TrackedSymbols:>{}],
      Deinitialization:>(Clear[Audio`AudioObjects`newAudio$$]; 
       Audio`ClearRef[Audio`AudioObjects`audioID$$]),
@@ -1414,7 +1412,7 @@ wav", "Real32", Appearance -> Automatic, AudioOutputDevice -> Automatic,
        Audio`AudioGUI[
        2, Audio`AudioObjects`audioID$$, Audio`AudioObjects`buttonState$$, 
         Audio`AudioObjects`audio$$], StandardForm],
-      ImageSizeCache->{136., {57., 63.}},
+      ImageSizeCache->{136., {40., 46.}},
       TrackedSymbols:>{}],
      Deinitialization:>(Clear[Audio`AudioObjects`newAudio$$]; 
       Audio`ClearRef[Audio`AudioObjects`audioID$$]),
@@ -1442,7 +1440,7 @@ wav", "Real32", Appearance -> Automatic, AudioOutputDevice -> Automatic,
        Audio`AudioGUI[
        2, Audio`AudioObjects`audioID$$, Audio`AudioObjects`buttonState$$, 
         Audio`AudioObjects`audio$$], StandardForm],
-      ImageSizeCache->{136., {57., 63.}},
+      ImageSizeCache->{136., {40., 46.}},
       TrackedSymbols:>{}],
      Deinitialization:>(Clear[Audio`AudioObjects`newAudio$$]; 
       Audio`ClearRef[Audio`AudioObjects`audioID$$]),
@@ -1470,7 +1468,7 @@ wav", "Real32", Appearance -> Automatic, AudioOutputDevice -> Automatic,
        Audio`AudioGUI[
        2, Audio`AudioObjects`audioID$$, Audio`AudioObjects`buttonState$$, 
         Audio`AudioObjects`audio$$], StandardForm],
-      ImageSizeCache->{136., {57., 63.}},
+      ImageSizeCache->{136., {40., 46.}},
       TrackedSymbols:>{}],
      Deinitialization:>(Clear[Audio`AudioObjects`newAudio$$]; 
       Audio`ClearRef[Audio`AudioObjects`audioID$$]),
@@ -1692,7 +1690,8 @@ TJ9lQp/ps0zoM32WifZBjXx25JgVY/Qmaqz/8kD84/EBM8uWRb/0Uoze/PCH
 kZZk5swZbGbluFlxgkXU2bBlQ9JLSeLMlq0b1q6dKHiT6mzdut58ZvnywQ76
 HLTw8PCefgsIjMcEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAb8H3g3Zm0=
-    "], {{0, 467}, {240, 0}}, {0, 255},
+    "], {{0, 467}, {240, 
+    0}}, {0, 255},
     ColorFunction->RGBColor],
    BoxForm`ImageTag["Byte", ColorSpace -> "RGB", Interleaving -> True],
    Selectable->False],
@@ -1939,7 +1938,8 @@ Cell[BoxData[
      "\"EntityProperty[\\\"City\\\", \\\"ArterialStreetLaneMiles\\\"]\""},
     "EntityProperty"], ",", 
    TemplateBox[{
-    "\"average public transit trip distance\"",RowBox[{"EntityProperty", "[", 
+    "\"average public transit trip distance\"",
+     RowBox[{"EntityProperty", "[", 
        RowBox[{"\"City\"", ",", "\"AveragePublicTransitTripLength\""}], "]"}],
      "\"EntityProperty[\\\"City\\\", \
 \\\"AveragePublicTransitTripLength\\\"]\""},
@@ -2018,7 +2018,8 @@ Cell[BoxData[
      "\"EntityProperty[\\\"City\\\", \\\"HousePriceIndex\\\"]\""},
     "EntityProperty"], ",", 
    TemplateBox[{
-    "\"FHFA home price index annual average\"",RowBox[{"EntityProperty", "[", 
+    "\"FHFA home price index annual average\"",
+     RowBox[{"EntityProperty", "[", 
        RowBox[{"\"City\"", ",", "\"HousePriceIndexAnnualAverage\""}], "]"}],
      "\"EntityProperty[\\\"City\\\", \\\"HousePriceIndexAnnualAverage\\\"]\""},
     "EntityProperty"], ",", 
@@ -2149,7 +2150,8 @@ Cell[BoxData[
      "\"EntityProperty[\\\"City\\\", \\\"Population\\\"]\""},
     "EntityProperty"], ",", 
    TemplateBox[{
-    "\"population by educational attainment\"",RowBox[{"EntityProperty", "[", 
+    "\"population by educational attainment\"",
+     RowBox[{"EntityProperty", "[", 
        RowBox[{"\"City\"", ",", "\"PopulationByEducationalAttainment\""}], 
        "]"}],"\"EntityProperty[\\\"City\\\", \
 \\\"PopulationByEducationalAttainment\\\"]\""},
@@ -2205,7 +2207,8 @@ Cell[BoxData[
        RowBox[{"\"City\"", ",", "\"PropertyCrimeTotal\""}], "]"}],
      "\"EntityProperty[\\\"City\\\", \\\"PropertyCrimeTotal\\\"]\""},
     "EntityProperty"], ",", 
-   TemplateBox[{"\"total public transit use\"",RowBox[{"EntityProperty", "[", 
+   TemplateBox[{
+    "\"total public transit use\"",RowBox[{"EntityProperty", "[", 
        RowBox[{
         "\"City\"", ",", "\"PublicTransportationAnnualPassengerMiles\""}], 
        "]"}],"\"EntityProperty[\\\"City\\\", \
@@ -2220,22 +2223,26 @@ Cell[BoxData[
 \\\"PublicTransportationAnnualUnlinkedPassengerTrips\\\"]\""},
     "EntityProperty"], ",", 
    TemplateBox[{
-    "\"4 bedroom apartment fair market rent\"",RowBox[{"EntityProperty", "[", 
+    "\"4 bedroom apartment fair market rent\"",
+     RowBox[{"EntityProperty", "[", 
        RowBox[{"\"City\"", ",", "\"RentFourBedrooms\""}], "]"}],
      "\"EntityProperty[\\\"City\\\", \\\"RentFourBedrooms\\\"]\""},
     "EntityProperty"], ",", 
    TemplateBox[{
-    "\"1 bedroom apartment fair market rent\"",RowBox[{"EntityProperty", "[", 
+    "\"1 bedroom apartment fair market rent\"",
+     RowBox[{"EntityProperty", "[", 
        RowBox[{"\"City\"", ",", "\"RentOneBedrooms\""}], "]"}],
      "\"EntityProperty[\\\"City\\\", \\\"RentOneBedrooms\\\"]\""},
     "EntityProperty"], ",", 
    TemplateBox[{
-    "\"3 bedroom apartment fair market rent\"",RowBox[{"EntityProperty", "[", 
+    "\"3 bedroom apartment fair market rent\"",
+     RowBox[{"EntityProperty", "[", 
        RowBox[{"\"City\"", ",", "\"RentThreeBedrooms\""}], "]"}],
      "\"EntityProperty[\\\"City\\\", \\\"RentThreeBedrooms\\\"]\""},
     "EntityProperty"], ",", 
    TemplateBox[{
-    "\"2 bedroom apartment fair market rent\"",RowBox[{"EntityProperty", "[", 
+    "\"2 bedroom apartment fair market rent\"",
+     RowBox[{"EntityProperty", "[", 
        RowBox[{"\"City\"", ",", "\"RentTwoBedrooms\""}], "]"}],
      "\"EntityProperty[\\\"City\\\", \\\"RentTwoBedrooms\\\"]\""},
     "EntityProperty"], ",", 
@@ -2272,7 +2279,8 @@ Cell[BoxData[
        RowBox[{"\"City\"", ",", "\"TotalSalesTaxRate\""}], "]"}],
      "\"EntityProperty[\\\"City\\\", \\\"TotalSalesTaxRate\\\"]\""},
     "EntityProperty"], ",", 
-   TemplateBox[{"\"average peak travel time\"",RowBox[{"EntityProperty", "[", 
+   TemplateBox[{
+    "\"average peak travel time\"",RowBox[{"EntityProperty", "[", 
        RowBox[{"\"City\"", ",", "\"TravelTimeIndex\""}], "]"}],
      "\"EntityProperty[\\\"City\\\", \\\"TravelTimeIndex\\\"]\""},
     "EntityProperty"], ",", 
@@ -2443,6 +2451,7 @@ Cell[BoxData[
               RowBox[{"\"California\"", ",", "\"UnitedStates\""}], "}"}]}], 
           "]"}],"\"Entity[\\\"AdministrativeDivision\\\", \
 {\\\"California\\\", \\\"UnitedStates\\\"}]\"","\"administrative division\""},
+       
        "Entity"], "\[Rule]", "1"}], ",", 
      RowBox[{
       TemplateBox[{"\"Oregon, United States\"",RowBox[{"Entity", "[", 
@@ -5056,7 +5065,8 @@ Ad+cbRrAYDC0hzHg+g41wMKfH/fOl3X4f3blyNjNzHWBPpk9czDmR9UBXfo0
 ck186wDgm7NNAxgMhvYwBlxfpAMa7I9vkG++rMP/cM04awCAZ6DLjV3HA86t
 ve+d/00DGAyG7YUx4PkONQC+gVtlhoDL/1tBA+Cxk+TH6cWj4i3cxecNrs96
 53/w/wHV/rVw
-           "], {{0, 728}, {513, 0}}, {0, 255}, ColorFunction -> RGBColor], 
+           "], {{0, 728}, {513, 0}}, {0, 255}, ColorFunction -> 
+           RGBColor], 
           BoxForm`ImageTag[
           "Byte", ColorSpace -> "RGB", Interleaving -> False, MetaInformation -> 
            Association[
@@ -5217,8 +5227,8 @@ BPC8COB5EuCdN/0ffAYnSA==
                     "Post"]], {}]}, {1, 0.1487177346293796}], StandardForm, 
                Graphics]]},
             
-            ImageSizeCache->{{236.8255785597594, 259.51823058023183`}, {
-             60.654472545942426`, 85.25684036548854}}],
+            ImageSizeCache->{{131.45865475542075`, 144.28790587790544`}, {
+             34.363595858856925`, 48.25380020304924}}],
            StatusArea[#, 1]& ,
            TagBoxNote->"1"],
           StyleBox["1", {}, StripOnInput -> False]],
@@ -5255,9 +5265,9 @@ BPC8COB5EuCdN/0ffAYnSA==
                     "Post"]], {}]}, {1, 0.1487177346293796}], StandardForm, 
                Graphics]]},
             
-            ImageSizeCache->{{193.36231845740053`, 
-             216.05497047787165`}, {-353.85066968652643`, \
--329.2483018669802}}],
+            ImageSizeCache->{{107.31239914299957`, 
+             120.14165026548352`}, {-195.91703871473686`, \
+-182.02683437054455`}}],
            StatusArea[#, 1]& ,
            TagBoxNote->"1"],
           StyleBox["1", {}, StripOnInput -> False]],
@@ -7894,7 +7904,8 @@ MDN/4Uny9WahA1JogKIewDeQmrNdAzgcjnjoANe3qAFuHHkmOV9Owv8XP1zq
 3MzcEOiTSyvHcn6UDmizTyPPJLUOAKk52zWAw+GIhw5w/TgdMMXx9A1KzZeT
 8D9c02UNAOgZGHJj2/6Av95/Lzn/uwZwOBybCx3g+RY1AH0D52WGQMj/86AB
 6LFT5Mdzq0vWW7iN6/X+fik5/4P/A8zfjtw=
-           "], {{0, 597}, {513, 0}}, {0, 255}, ColorFunction -> RGBColor], 
+           "], {{0, 597}, {513, 0}}, {0, 
+           255}, ColorFunction -> RGBColor], 
           BoxForm`ImageTag[
           "Byte", ColorSpace -> "RGB", Interleaving -> False, MetaInformation -> 
            Association[
@@ -8079,8 +8090,8 @@ Rf7MiRQGhjV1NTdm8Dh1m52KWzgDd5YpMlem8ejae//TUDAD5V3OT21p/qgD
 hksvUQ6peN89lMBjarnNzZDDdF74q//aaNrfuj8vlXt6MSA99DToDY1vzdtS
 +FTCQLvPylFyyn4/8/WDdL7I2uu0K/gWj+l+L3Ze2cJAlLBI/pb63eQXACtc
 Gfj/+ecfdu5ZWg==
-        "], {{-118.547773995819, 34.99211086608084}, {-118.3486577, 
-        34.77830718153246}, {-118.5003822, 
+        "], {{-118.547773995819, 
+        34.99211086608084}, {-118.3486577, 34.77830718153246}, {-118.5003822, 
         34.815166782807005`}, {-118.6065399, 35.0096026205844}, {-118.5479703,
          34.9932247777664}, {-118.547773995819, 
         34.99211086608084}}, {{-119.5732256, 
@@ -10549,7 +10560,8 @@ MDN/4Uny9WahA1JogKIewDeQmrNdAzgcjnjoANe3qAFuHHkmOV9Owv8XP1zq
 3MzcEOiTSyvHcn6UDmizTyPPJLUOAKk52zWAw+GIhw5w/TgdMMXx9A1KzZeT
 8D9c02UNAOgZGHJj2/6Av95/Lzn/uwZwOBybCx3g+RY1AH0D52WGQMj/86AB
 6LFT5Mdzq0vWW7iN6/X+fik5/4P/A8zfjtw=
-           "], {{0, 597}, {513, 0}}, {0, 255}, ColorFunction -> RGBColor], 
+           "], {{0, 597}, {513, 0}}, {0, 
+           255}, ColorFunction -> RGBColor], 
           BoxForm`ImageTag[
           "Byte", ColorSpace -> "RGB", Interleaving -> False, MetaInformation -> 
            Association[
@@ -10757,6 +10769,7 @@ Cell[BoxData[
    TagBox["Failure",
     "SummaryHead"], "[", 
    DynamicModuleBox[{Typeset`open$$ = False, Typeset`embedState$$ = "Ready"}, 
+    
     TemplateBox[{PaneSelectorBox[{False -> GridBox[{{
             PaneBox[
              ButtonBox[
@@ -11648,7 +11661,8 @@ Cell[BoxData[
       "1.2740974`*^7", "\<\"\"\>", "\<\"\"\>", "\<\"\"\>", "\<\"\"\>", \
 "\<\"\"\>", "\<\"\"\>", 
       "856869.`", "\<\"\"\>", "\<\"\"\>", "\<\"\"\>", "\<\"\"\>", "\<\"\"\>", 
-      "596292.`", "\<\"\"\>", "\<\"\"\>", "\<\"\"\>", "\<\"\"\>", "\<\"\"\>"},
+      "596292.`", "\<\"\"\>", "\<\"\"\>", "\<\"\"\>", "\<\"\"\>", \
+"\<\"\"\>"},
      {"\<\"black\"\>", "\<\"\"\>", "\<\"\"\>", "\<\"\"\>", "\<\"\"\>", \
 "\<\"\"\>", "\<\"\"\>", 
       "362296.`", "\<\"\"\>", "\<\"\"\>", "\<\"\"\>", "\<\"\"\>", "\<\"\"\>", \
@@ -11721,7 +11735,8 @@ Cell[CellGroupData[{
 
 Cell[BoxData[
  RowBox[{"WeatherData", "[", 
-  RowBox[{"\"\<KN23\>\"", ",", "\"\<PrecipitationRate\>\""}], "]"}]], "Input",
+  RowBox[{"\"\<KN23\>\"", ",", "\"\<PrecipitationRate\>\""}], "]"}]], "Input",\
+
  CellChangeTimes->{{3.7493466272210083`*^9, 3.749346628987303*^9}, {
   3.749346668868091*^9, 3.749346676248337*^9}, {3.749346708743675*^9, 
   3.7493467272691317`*^9}},ExpressionUUID->"9ad18fc9-c8c9-4f1c-9b29-\
@@ -11809,8 +11824,10 @@ Cell[BoxData[
 Cell[BoxData[
  GraphicsBox[{
    {RGBColor[0, 1, 0], RectangleBox[{0, 0}, {1, 0.3}]}, 
-   {RGBColor[0.6, 0.4, 0.2], Thickness[Large], CircleBox[{0.2, -0.2}, 0.05]}, 
-   {RGBColor[0.6, 0.4, 0.2], Thickness[Large], CircleBox[{0.8, -0.3}, 0.05]}, 
+   {RGBColor[0.6, 0.4, 0.2], Thickness[Large], 
+    CircleBox[{0.2, -0.2}, 0.05]}, 
+   {RGBColor[0.6, 0.4, 0.2], Thickness[Large], 
+    CircleBox[{0.8, -0.3}, 0.05]}, 
    {RGBColor[0.6, 0.4, 0.2], Thickness[Large], 
     CircleBox[{0.6, -0.2}, 0.05]}}]], "Output",
  CellChangeTimes->{{3.7493467872348504`*^9, 3.7493468406487727`*^9}, {
@@ -11876,7 +11893,7 @@ drawing is fine",
 WindowSize->{1280, 637},
 WindowMargins->{{-8, Automatic}, {Automatic, -8}},
 WindowStatusArea->None,
-FrontEndVersion->"11.2 for Microsoft Windows (64-bit) (September 10, 2017)",
+FrontEndVersion->"12.0 for Mac OS X x86 (64-bit) (April 11, 2019)",
 StyleDefinitions->"Default.nb"
 ]
 (* End of Notebook Content *)
@@ -11891,182 +11908,182 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[580, 22, 166, 3, 96, "Title",ExpressionUUID->"2d16ac94-5238-47f7-9baf-66d178a12cbf"],
-Cell[749, 27, 236, 6, 34, "Text",ExpressionUUID->"a9024d56-9194-4a85-8dd1-40157eb1461e"],
+Cell[580, 22, 166, 3, 98, "Title",ExpressionUUID->"2d16ac94-5238-47f7-9baf-66d178a12cbf"],
+Cell[749, 27, 236, 6, 35, "Text",ExpressionUUID->"a9024d56-9194-4a85-8dd1-40157eb1461e"],
 Cell[CellGroupData[{
-Cell[1010, 37, 1698, 51, 143, "Input",ExpressionUUID->"3019d8cb-251d-4df4-98d1-3787d47392d2"],
-Cell[2711, 90, 432, 7, 376, "Output",ExpressionUUID->"d3b34cbc-7939-4dcb-825d-1b52cb70f51b"]
+Cell[1010, 37, 1717, 50, 157, "Input",ExpressionUUID->"3019d8cb-251d-4df4-98d1-3787d47392d2"],
+Cell[2730, 89, 478, 7, 376, "Output",ExpressionUUID->"efa1fb5f-ee6c-4bbd-ac69-41b894bb1197"]
 }, Open  ]],
-Cell[3158, 100, 540, 12, 144, "Text",ExpressionUUID->"27d55173-b5c6-4e5e-816d-b44a19cf9e07"],
-Cell[3701, 114, 367, 6, 78, "Text",ExpressionUUID->"e2ae846a-e2db-410d-b647-04ec22a181e5"],
-Cell[4071, 122, 380, 9, 78, "Text",ExpressionUUID->"6ab4f481-4718-4042-af1c-d66455d21c0c"],
-Cell[4454, 133, 494, 10, 100, "Text",ExpressionUUID->"eda79b22-e2de-4d72-9bb4-28b0f5fd94ed"],
+Cell[3223, 99, 540, 12, 150, "Text",ExpressionUUID->"27d55173-b5c6-4e5e-816d-b44a19cf9e07"],
+Cell[3766, 113, 367, 6, 81, "Text",ExpressionUUID->"e2ae846a-e2db-410d-b647-04ec22a181e5"],
+Cell[4136, 121, 380, 9, 81, "Text",ExpressionUUID->"6ab4f481-4718-4042-af1c-d66455d21c0c"],
+Cell[4519, 132, 494, 10, 104, "Text",ExpressionUUID->"eda79b22-e2de-4d72-9bb4-28b0f5fd94ed"],
 Cell[CellGroupData[{
-Cell[4973, 147, 1927, 60, 124, "Input",ExpressionUUID->"a9c5d35c-444b-44bc-a224-7f65c8760022"],
-Cell[6903, 209, 441, 9, 376, "Output",ExpressionUUID->"5ea27bd2-0c1d-485d-8640-0654a2d7b7be"]
+Cell[5038, 146, 1946, 59, 136, "Input",ExpressionUUID->"a9c5d35c-444b-44bc-a224-7f65c8760022"],
+Cell[6987, 207, 513, 9, 376, "Output",ExpressionUUID->"20f380df-3066-4340-8e5c-05e34a472bda"]
 }, Open  ]],
-Cell[7359, 221, 589, 15, 180, "Text",ExpressionUUID->"4b96cd91-6636-4ff3-bd96-a6287849f8df"],
+Cell[7515, 219, 589, 15, 104, "Text",ExpressionUUID->"4b96cd91-6636-4ff3-bd96-a6287849f8df"],
 Cell[CellGroupData[{
-Cell[7973, 240, 2071, 61, 289, "Input",ExpressionUUID->"51926304-f10b-4a08-b437-969cd156fbc6"],
-Cell[10047, 303, 397, 7, 678, "Output",ExpressionUUID->"310a9660-061f-4e75-b566-2a10e6884cc2"]
+Cell[8129, 238, 2071, 61, 178, "Input",ExpressionUUID->"51926304-f10b-4a08-b437-969cd156fbc6"],
+Cell[10203, 301, 397, 7, 376, "Output",ExpressionUUID->"310a9660-061f-4e75-b566-2a10e6884cc2"]
 }, Open  ]],
-Cell[10459, 313, 411, 8, 101, "Text",ExpressionUUID->"d59400ab-415f-431c-bc78-93a78f91a515"],
-Cell[10873, 323, 262, 5, 61, "Text",ExpressionUUID->"29b47699-fa4d-4c8c-a77f-818bbd649731"],
-Cell[11138, 330, 426, 9, 180, "Text",ExpressionUUID->"945355e5-1d7f-49df-96da-5441bc95415c"],
-Cell[11567, 341, 246, 5, 61, "Text",ExpressionUUID->"56e9d8f5-4db5-41e5-b0c5-c99aa6f6adb9"],
-Cell[11816, 348, 99, 1, 1, "PageBreak",ExpressionUUID->"3ced3136-8b16-4d63-a741-e7854f415b3e",
+Cell[10615, 311, 411, 8, 35, "Text",ExpressionUUID->"d59400ab-415f-431c-bc78-93a78f91a515"],
+Cell[11029, 321, 262, 5, 35, "Text",ExpressionUUID->"29b47699-fa4d-4c8c-a77f-818bbd649731"],
+Cell[11294, 328, 426, 9, 81, "Text",ExpressionUUID->"945355e5-1d7f-49df-96da-5441bc95415c"],
+Cell[11723, 339, 246, 5, 35, "Text",ExpressionUUID->"56e9d8f5-4db5-41e5-b0c5-c99aa6f6adb9"],
+Cell[11972, 346, 99, 1, 4, "PageBreak",ExpressionUUID->"3ced3136-8b16-4d63-a741-e7854f415b3e",
  PageBreakBelow->True]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[11952, 354, 164, 3, 174, "Title",ExpressionUUID->"3cfd6b57-3314-46bc-9ef1-25abacd6d5cd"],
-Cell[12119, 359, 705, 15, 166, "Text",ExpressionUUID->"c0bc0f0e-b626-41f8-b1c6-7edf175b0321"],
-Cell[12827, 376, 2626, 39, 210, "Text",ExpressionUUID->"1625791d-42be-4afb-ad8d-77df94dc26a7"],
-Cell[15456, 417, 284, 6, 34, "Text",ExpressionUUID->"3c1cfad4-dbde-4870-85ca-a3ab0d4587d7"],
+Cell[12108, 352, 164, 3, 98, "Title",ExpressionUUID->"3cfd6b57-3314-46bc-9ef1-25abacd6d5cd"],
+Cell[12275, 357, 705, 15, 173, "Text",ExpressionUUID->"c0bc0f0e-b626-41f8-b1c6-7edf175b0321"],
+Cell[12983, 374, 2626, 39, 219, "Text",ExpressionUUID->"1625791d-42be-4afb-ad8d-77df94dc26a7"],
+Cell[15612, 415, 284, 6, 35, "Text",ExpressionUUID->"3c1cfad4-dbde-4870-85ca-a3ab0d4587d7"],
 Cell[CellGroupData[{
-Cell[15765, 427, 305, 8, 28, "Input",ExpressionUUID->"c8fef422-e181-4182-8de5-3e1032a10d03"],
-Cell[16073, 437, 252, 4, 32, "Output",ExpressionUUID->"7102fc45-4e41-4aa5-9efd-079d7c9a44e0"]
+Cell[15921, 425, 305, 8, 30, "Input",ExpressionUUID->"c8fef422-e181-4182-8de5-3e1032a10d03"],
+Cell[16229, 435, 252, 4, 34, "Output",ExpressionUUID->"7102fc45-4e41-4aa5-9efd-079d7c9a44e0"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[16362, 446, 431, 10, 28, "Input",ExpressionUUID->"0a4fac2c-fa54-47d4-87dc-cceebb1eb559"],
-Cell[16796, 458, 1395, 31, 139, "Output",ExpressionUUID->"f0364e91-e6ce-4517-9c91-7698dca73fc8"]
+Cell[16518, 444, 431, 10, 52, "Input",ExpressionUUID->"0a4fac2c-fa54-47d4-87dc-cceebb1eb559"],
+Cell[16952, 456, 1395, 31, 105, "Output",ExpressionUUID->"f0364e91-e6ce-4517-9c91-7698dca73fc8"]
 }, Open  ]],
-Cell[18206, 492, 192, 3, 34, "Text",ExpressionUUID->"d59d8d68-f558-46a1-ac2f-a6f142e0c2e0"],
+Cell[18362, 490, 192, 3, 35, "Text",ExpressionUUID->"d59d8d68-f558-46a1-ac2f-a6f142e0c2e0"],
 Cell[CellGroupData[{
-Cell[18423, 499, 198, 4, 28, "Input",ExpressionUUID->"2f3a675b-42bf-4bb5-b45f-55faf96e166d"],
-Cell[18624, 505, 196, 5, 40, "Output",ExpressionUUID->"4958543c-522f-4bea-bb3e-d22086648e42"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[18857, 515, 453, 10, 28, "Input",ExpressionUUID->"810140c9-d0e1-44f4-ae19-49587eba1739"],
-Cell[19313, 527, 1421, 31, 139, "Output",ExpressionUUID->"47a1cb84-104d-4dca-8816-99e24f9b1c36"]
+Cell[18579, 497, 198, 4, 30, "Input",ExpressionUUID->"2f3a675b-42bf-4bb5-b45f-55faf96e166d"],
+Cell[18780, 503, 196, 5, 36, "Output",ExpressionUUID->"4958543c-522f-4bea-bb3e-d22086648e42"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[20771, 563, 274, 7, 28, "Input",ExpressionUUID->"da31cb24-b094-4fa8-a0f7-dfabdfe79371"],
-Cell[21048, 572, 135, 3, 32, "Output",ExpressionUUID->"ed675fad-8498-476e-8ea1-9a825dba5e08"]
+Cell[19013, 513, 453, 10, 30, "Input",ExpressionUUID->"810140c9-d0e1-44f4-ae19-49587eba1739"],
+Cell[19469, 525, 1421, 31, 105, "Output",ExpressionUUID->"47a1cb84-104d-4dca-8816-99e24f9b1c36"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[21220, 580, 276, 6, 28, "Input",ExpressionUUID->"3ba58b22-d373-4a8c-a8c9-cd059b4b07e6"],
-Cell[21499, 588, 41076, 901, 739, "Output",ExpressionUUID->"a2f492a8-20ec-4b7c-9d13-6a561cde7a04"]
+Cell[20927, 561, 274, 7, 30, "Input",ExpressionUUID->"da31cb24-b094-4fa8-a0f7-dfabdfe79371"],
+Cell[21204, 570, 135, 3, 34, "Output",ExpressionUUID->"ed675fad-8498-476e-8ea1-9a825dba5e08"]
 }, Open  ]],
-Cell[62590, 1492, 416, 11, 122, "Text",ExpressionUUID->"ded10915-e8f4-4c1f-af02-f2ad8918b2bb"],
-Cell[63009, 1505, 99, 1, 4, "PageBreak",ExpressionUUID->"8d6f0b04-6650-473f-94de-c65157c70900",
+Cell[CellGroupData[{
+Cell[21376, 578, 276, 6, 30, "Input",ExpressionUUID->"3ba58b22-d373-4a8c-a8c9-cd059b4b07e6"],
+Cell[21655, 586, 41076, 901, 537, "Output",ExpressionUUID->"a2f492a8-20ec-4b7c-9d13-6a561cde7a04"]
+}, Open  ]],
+Cell[62746, 1490, 416, 11, 127, "Text",ExpressionUUID->"ded10915-e8f4-4c1f-af02-f2ad8918b2bb"],
+Cell[63165, 1503, 99, 1, 4, "PageBreak",ExpressionUUID->"8d6f0b04-6650-473f-94de-c65157c70900",
  PageBreakBelow->True]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[63145, 1511, 174, 3, 96, "Title",ExpressionUUID->"e6fd1262-7838-4a97-93a8-fe73449debd0"],
-Cell[63322, 1516, 808, 16, 144, "Text",ExpressionUUID->"2852c69b-43cb-467c-8d29-0e478c2ebcf1"],
-Cell[64133, 1534, 647, 10, 144, "Text",ExpressionUUID->"e5bfd2de-d6a7-4bd2-ac1d-f5f773fca956"],
-Cell[64783, 1546, 99, 1, 4, "PageBreak",ExpressionUUID->"4a4bff33-7410-47c0-8bee-6d1425cfd847",
+Cell[63301, 1509, 174, 3, 98, "Title",ExpressionUUID->"e6fd1262-7838-4a97-93a8-fe73449debd0"],
+Cell[63478, 1514, 808, 16, 150, "Text",ExpressionUUID->"2852c69b-43cb-467c-8d29-0e478c2ebcf1"],
+Cell[64289, 1532, 647, 10, 150, "Text",ExpressionUUID->"e5bfd2de-d6a7-4bd2-ac1d-f5f773fca956"],
+Cell[64939, 1544, 99, 1, 4, "PageBreak",ExpressionUUID->"4a4bff33-7410-47c0-8bee-6d1425cfd847",
  PageBreakBelow->True]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[64919, 1552, 178, 3, 96, "Title",ExpressionUUID->"d8896bd5-961a-48a5-97a8-6d706772fc80"],
-Cell[65100, 1557, 239, 6, 34, "Text",ExpressionUUID->"b3c54b45-5cb8-4eff-8bf2-3c50603c42a3"],
-Cell[65342, 1565, 8193, 139, 477, "Text",ExpressionUUID->"dbb9d727-d28d-4599-8ed3-32425c3a8283"],
-Cell[73538, 1706, 325, 8, 34, "Text",ExpressionUUID->"ab592986-8be6-499f-b10b-0db264b2af19"],
+Cell[65075, 1550, 178, 3, 98, "Title",ExpressionUUID->"d8896bd5-961a-48a5-97a8-6d706772fc80"],
+Cell[65256, 1555, 239, 6, 35, "Text",ExpressionUUID->"b3c54b45-5cb8-4eff-8bf2-3c50603c42a3"],
+Cell[65498, 1563, 8198, 140, 477, "Text",ExpressionUUID->"dbb9d727-d28d-4599-8ed3-32425c3a8283"],
+Cell[73699, 1705, 325, 8, 35, "Text",ExpressionUUID->"ab592986-8be6-499f-b10b-0db264b2af19"],
 Cell[CellGroupData[{
-Cell[73888, 1718, 367, 10, 28, "Input",ExpressionUUID->"a7227bcd-acf6-4e07-888c-13a22b9ee07a"],
-Cell[74258, 1730, 203, 5, 43, "Output",ExpressionUUID->"1aebd353-5a0c-47cb-9a29-1b7af3ccc59b"]
+Cell[74049, 1717, 367, 10, 30, "Input",ExpressionUUID->"a7227bcd-acf6-4e07-888c-13a22b9ee07a"],
+Cell[74419, 1729, 203, 5, 38, "Output",ExpressionUUID->"1aebd353-5a0c-47cb-9a29-1b7af3ccc59b"]
 }, Open  ]],
-Cell[74476, 1738, 783, 15, 188, "Text",ExpressionUUID->"3a4d08a4-3950-4126-97a8-202a5b2481d9"],
-Cell[75262, 1755, 1023, 18, 166, "Text",ExpressionUUID->"35de6e8a-2d19-42a9-98ca-be1ee6880f5a"],
+Cell[74637, 1737, 783, 15, 196, "Text",ExpressionUUID->"3a4d08a4-3950-4126-97a8-202a5b2481d9"],
+Cell[75423, 1754, 1023, 18, 173, "Text",ExpressionUUID->"35de6e8a-2d19-42a9-98ca-be1ee6880f5a"],
 Cell[CellGroupData[{
-Cell[76310, 1777, 319, 6, 28, "Input",ExpressionUUID->"56fcb861-a5a0-40f6-8912-058862336cea"],
-Cell[76632, 1785, 190, 3, 32, "Output",ExpressionUUID->"f9a59fa0-c2e0-447a-b797-f5fe1f20280c"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[76859, 1793, 240, 5, 28, "Input",ExpressionUUID->"d974d728-865d-4d70-a54f-3d7d50be8f66"],
-Cell[77102, 1800, 195, 4, 32, "Output",ExpressionUUID->"13c96a1b-498c-402d-858d-57f7587596dc"]
-}, Open  ]],
-Cell[77312, 1807, 617, 14, 78, "Text",ExpressionUUID->"2f0aba3a-0060-4a62-9568-e584961e0507"],
-Cell[77932, 1823, 281, 7, 28, "Input",ExpressionUUID->"0ae8c03d-057f-46e8-acf2-8a80b237722a"],
-Cell[CellGroupData[{
-Cell[78238, 1834, 544, 13, 43, "Input",ExpressionUUID->"e07de7bc-40f3-4a8b-b364-c425f203a07b"],
-Cell[78785, 1849, 24173, 459, 572, "Output",ExpressionUUID->"09ea483d-e8ff-44e0-a76b-a1a26667f1e6"]
+Cell[76471, 1776, 319, 6, 30, "Input",ExpressionUUID->"56fcb861-a5a0-40f6-8912-058862336cea"],
+Cell[76793, 1784, 190, 3, 34, "Output",ExpressionUUID->"f9a59fa0-c2e0-447a-b797-f5fe1f20280c"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[102995, 2313, 153, 3, 67, "Section",ExpressionUUID->"e3a81826-8b5c-4b57-b096-0347221808b0"],
-Cell[CellGroupData[{
-Cell[103173, 2320, 347, 7, 28, "Input",ExpressionUUID->"ba74d348-044e-4d6b-9fc4-2d4beca5e4a7"],
-Cell[103523, 2329, 268, 6, 32, "Output",ExpressionUUID->"793914b0-4765-4bf3-92ff-330bc7b227e8"]
+Cell[77020, 1792, 240, 5, 30, "Input",ExpressionUUID->"d974d728-865d-4d70-a54f-3d7d50be8f66"],
+Cell[77263, 1799, 195, 4, 34, "Output",ExpressionUUID->"13c96a1b-498c-402d-858d-57f7587596dc"]
 }, Open  ]],
-Cell[103806, 2338, 395, 10, 28, "Input",ExpressionUUID->"509c81fa-f5b7-4444-84e1-be57f9b793b5"],
+Cell[77473, 1806, 617, 14, 81, "Text",ExpressionUUID->"2f0aba3a-0060-4a62-9568-e584961e0507"],
+Cell[78093, 1822, 281, 7, 30, "Input",ExpressionUUID->"0ae8c03d-057f-46e8-acf2-8a80b237722a"],
 Cell[CellGroupData[{
-Cell[104226, 2352, 295, 7, 28, "Input",ExpressionUUID->"77807b05-ddc2-415d-a0f5-19b16b2b6bdb"],
-Cell[104524, 2361, 558, 15, 32, "Output",ExpressionUUID->"db0de29e-f7c4-494d-8db8-4f29e6407a3b"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[105119, 2381, 546, 13, 43, "Input",ExpressionUUID->"60e7ed08-dedb-4490-ba76-6c042468b2f0"],
-Cell[105668, 2396, 255, 7, 32, "Output",ExpressionUUID->"17602056-a273-4d6a-bd82-401550c7835f"]
+Cell[78399, 1833, 544, 13, 39, "Input",ExpressionUUID->"e07de7bc-40f3-4a8b-b364-c425f203a07b"],
+Cell[78946, 1848, 24225, 468, 496, "Output",ExpressionUUID->"09ea483d-e8ff-44e0-a76b-a1a26667f1e6"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[105960, 2408, 551, 11, 43, "Input",ExpressionUUID->"414e0703-1c6e-4b4f-bff5-71f69a7110b3"],
-Cell[106514, 2421, 271, 7, 32, "Output",ExpressionUUID->"7f7beb31-1c20-47bc-82c5-bf6fc74ad79d"]
+Cell[103208, 2321, 153, 3, 67, "Section",ExpressionUUID->"e3a81826-8b5c-4b57-b096-0347221808b0"],
+Cell[CellGroupData[{
+Cell[103386, 2328, 347, 7, 30, "Input",ExpressionUUID->"ba74d348-044e-4d6b-9fc4-2d4beca5e4a7"],
+Cell[103736, 2337, 268, 6, 34, "Output",ExpressionUUID->"793914b0-4765-4bf3-92ff-330bc7b227e8"]
+}, Open  ]],
+Cell[104019, 2346, 395, 10, 30, "Input",ExpressionUUID->"509c81fa-f5b7-4444-84e1-be57f9b793b5"],
+Cell[CellGroupData[{
+Cell[104439, 2360, 295, 7, 30, "Input",ExpressionUUID->"77807b05-ddc2-415d-a0f5-19b16b2b6bdb"],
+Cell[104737, 2369, 558, 15, 34, "Output",ExpressionUUID->"db0de29e-f7c4-494d-8db8-4f29e6407a3b"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[106822, 2433, 1499, 31, 78, "Input",ExpressionUUID->"7f93004a-41df-4e76-8f88-0d4d1f3e7ffc"],
-Cell[108324, 2466, 181111, 3113, 437, "Output",ExpressionUUID->"f19a0f2d-2aa2-4376-ab32-4c298a278b5e"]
-}, Open  ]],
-Cell[289450, 5582, 273, 6, 56, "Text",ExpressionUUID->"1cf72200-62a7-4fd7-b8d1-e6017a1fc95c"],
-Cell[CellGroupData[{
-Cell[289748, 5592, 704, 13, 43, "Input",ExpressionUUID->"347b65b5-4e02-45a4-be40-36c1d9b868c1"],
-Cell[290455, 5607, 158353, 2629, 437, "Output",ExpressionUUID->"4c207edd-248f-4618-9f73-9bc5297c0826"]
+Cell[105332, 2389, 546, 13, 40, "Input",ExpressionUUID->"60e7ed08-dedb-4490-ba76-6c042468b2f0"],
+Cell[105881, 2404, 255, 7, 34, "Output",ExpressionUUID->"17602056-a273-4d6a-bd82-401550c7835f"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[448845, 8241, 873, 19, 43, "Input",ExpressionUUID->"f12add98-c1a7-4946-b334-a74f299622f7"],
-Cell[449721, 8262, 149272, 2477, 437, "Output",ExpressionUUID->"64582531-15ad-458d-a7c8-efb4340d9480"]
+Cell[106173, 2416, 551, 11, 40, "Input",ExpressionUUID->"414e0703-1c6e-4b4f-bff5-71f69a7110b3"],
+Cell[106727, 2429, 271, 7, 34, "Output",ExpressionUUID->"7f7beb31-1c20-47bc-82c5-bf6fc74ad79d"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[599030, 10744, 326, 7, 28, "Input",ExpressionUUID->"fc131ae9-ddda-4628-b594-05b36ebb91b6"],
-Cell[599359, 10753, 6229, 127, 71, "Output",ExpressionUUID->"c46da41e-02bc-4bd6-94b8-05a1b2cab070"]
+Cell[107035, 2441, 1507, 32, 71, "Input",ExpressionUUID->"7f93004a-41df-4e76-8f88-0d4d1f3e7ffc"],
+Cell[108545, 2475, 181127, 3114, 437, "Output",ExpressionUUID->"f19a0f2d-2aa2-4376-ab32-4c298a278b5e"]
+}, Open  ]],
+Cell[289687, 5592, 273, 6, 58, "Text",ExpressionUUID->"1cf72200-62a7-4fd7-b8d1-e6017a1fc95c"],
+Cell[CellGroupData[{
+Cell[289985, 5602, 704, 13, 40, "Input",ExpressionUUID->"347b65b5-4e02-45a4-be40-36c1d9b868c1"],
+Cell[290692, 5617, 158365, 2630, 437, "Output",ExpressionUUID->"4c207edd-248f-4618-9f73-9bc5297c0826"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[605625, 10885, 163, 3, 53, "Subsection",ExpressionUUID->"1b5807e3-eea5-4417-9104-2da0c01744eb"],
-Cell[605791, 10890, 387, 9, 78, "Text",ExpressionUUID->"55c2bf6a-dee6-4c93-b5df-9867180bb6a8"],
-Cell[CellGroupData[{
-Cell[606203, 10903, 481, 10, 28, "Input",ExpressionUUID->"c649ec0d-166f-4ed3-82aa-0a8040d886ee"],
-Cell[606687, 10915, 7274, 112, 243, "Output",ExpressionUUID->"1f0e2dfe-4e60-44b0-b29f-d06b85584eb4"]
+Cell[449094, 8252, 873, 19, 43, "Input",ExpressionUUID->"f12add98-c1a7-4946-b334-a74f299622f7"],
+Cell[449970, 8273, 149284, 2478, 437, "Output",ExpressionUUID->"64582531-15ad-458d-a7c8-efb4340d9480"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[613998, 11032, 201, 4, 28, "Input",ExpressionUUID->"a1fe14c2-98d2-4c16-a49f-6c298b1420ff"],
-Cell[614202, 11038, 13266, 474, 893, "Output",ExpressionUUID->"9495803f-e58c-4c3f-8e6f-42708c9d187d"]
+Cell[599291, 10756, 326, 7, 28, "Input",ExpressionUUID->"fc131ae9-ddda-4628-b594-05b36ebb91b6"],
+Cell[599620, 10765, 6234, 128, 71, "Output",ExpressionUUID->"c46da41e-02bc-4bd6-94b8-05a1b2cab070"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[627505, 11517, 391, 10, 28, "Input",ExpressionUUID->"c973edbc-58ba-4ba5-97b8-a42644f31126"],
-Cell[627899, 11529, 4973, 77, 148, "Output",ExpressionUUID->"86a2c98d-635c-4a88-a6cd-751cc34eac1e"]
+Cell[605891, 10898, 163, 3, 53, "Subsection",ExpressionUUID->"1b5807e3-eea5-4417-9104-2da0c01744eb"],
+Cell[606057, 10903, 387, 9, 78, "Text",ExpressionUUID->"55c2bf6a-dee6-4c93-b5df-9867180bb6a8"],
+Cell[CellGroupData[{
+Cell[606469, 10916, 481, 10, 28, "Input",ExpressionUUID->"c649ec0d-166f-4ed3-82aa-0a8040d886ee"],
+Cell[606953, 10928, 7274, 112, 243, "Output",ExpressionUUID->"1f0e2dfe-4e60-44b0-b29f-d06b85584eb4"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[632909, 11611, 197, 4, 28, "Input",ExpressionUUID->"35e9caf8-4c1e-4608-b053-04bdb104e52e"],
-Cell[633109, 11617, 3788, 66, 119, "Output",ExpressionUUID->"7540cb64-96c9-4ce9-ba29-c27575c7675c"]
+Cell[614264, 11045, 201, 4, 28, "Input",ExpressionUUID->"a1fe14c2-98d2-4c16-a49f-6c298b1420ff"],
+Cell[614468, 11051, 13266, 474, 893, "Output",ExpressionUUID->"9495803f-e58c-4c3f-8e6f-42708c9d187d"]
 }, Open  ]],
-Cell[636912, 11686, 286, 8, 78, "Text",ExpressionUUID->"425672b4-ef5e-49b7-b7d9-4155755d11ac"],
-Cell[637201, 11696, 99, 1, 1, "PageBreak",ExpressionUUID->"c29e7bf6-6829-4d39-9d62-5a8b5e744c5f",
+Cell[CellGroupData[{
+Cell[627771, 11530, 391, 10, 28, "Input",ExpressionUUID->"c973edbc-58ba-4ba5-97b8-a42644f31126"],
+Cell[628165, 11542, 4973, 77, 148, "Output",ExpressionUUID->"86a2c98d-635c-4a88-a6cd-751cc34eac1e"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[633175, 11624, 197, 4, 28, "Input",ExpressionUUID->"35e9caf8-4c1e-4608-b053-04bdb104e52e"],
+Cell[633375, 11630, 3790, 67, 119, "Output",ExpressionUUID->"7540cb64-96c9-4ce9-ba29-c27575c7675c"]
+}, Open  ]],
+Cell[637180, 11700, 286, 8, 78, "Text",ExpressionUUID->"425672b4-ef5e-49b7-b7d9-4155755d11ac"],
+Cell[637469, 11710, 99, 1, 1, "PageBreak",ExpressionUUID->"c29e7bf6-6829-4d39-9d62-5a8b5e744c5f",
  PageBreakBelow->True]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[637361, 11704, 196, 3, 96, "Title",ExpressionUUID->"183cfcc8-9f5e-4ee2-90a4-b5b4998a0a8c"],
-Cell[637560, 11709, 365, 8, 78, "Text",ExpressionUUID->"625e7774-a790-4887-9321-158201108f22"],
+Cell[637629, 11718, 196, 3, 96, "Title",ExpressionUUID->"183cfcc8-9f5e-4ee2-90a4-b5b4998a0a8c"],
+Cell[637828, 11723, 365, 8, 78, "Text",ExpressionUUID->"625e7774-a790-4887-9321-158201108f22"],
 Cell[CellGroupData[{
-Cell[637950, 11721, 347, 6, 28, "Input",ExpressionUUID->"9ad18fc9-c8c9-4f1c-9b29-700eaf1a3325"],
-Cell[638300, 11729, 162, 3, 32, "Output",ExpressionUUID->"8b742b00-1087-4588-9071-63b71c85b752"]
+Cell[638218, 11735, 349, 7, 28, "Input",ExpressionUUID->"9ad18fc9-c8c9-4f1c-9b29-700eaf1a3325"],
+Cell[638570, 11744, 162, 3, 32, "Output",ExpressionUUID->"8b742b00-1087-4588-9071-63b71c85b752"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[638499, 11737, 255, 6, 28, "Input",ExpressionUUID->"50b20e60-769e-4ef7-a538-d23f8d535f08"],
-Cell[638757, 11745, 184, 4, 32, "Output",ExpressionUUID->"56e69a6d-7769-4f9b-9a15-edcdde8a6891"]
+Cell[638769, 11752, 255, 6, 28, "Input",ExpressionUUID->"50b20e60-769e-4ef7-a538-d23f8d535f08"],
+Cell[639027, 11760, 184, 4, 32, "Output",ExpressionUUID->"56e69a6d-7769-4f9b-9a15-edcdde8a6891"]
 }, Open  ]],
-Cell[638956, 11752, 299, 7, 78, "Text",ExpressionUUID->"2bc585b4-2538-48ca-b6a4-8e90e46da828"],
+Cell[639226, 11767, 299, 7, 78, "Text",ExpressionUUID->"2bc585b4-2538-48ca-b6a4-8e90e46da828"],
 Cell[CellGroupData[{
-Cell[639280, 11763, 1465, 43, 86, "Input",ExpressionUUID->"d13139b9-db1e-4d4f-abb6-9b51754158bc"],
-Cell[640748, 11808, 570, 10, 256, "Output",ExpressionUUID->"bddf51dd-c220-4706-9a2d-00ac5596a91e"]
+Cell[639550, 11778, 1465, 43, 86, "Input",ExpressionUUID->"d13139b9-db1e-4d4f-abb6-9b51754158bc"],
+Cell[641018, 11823, 580, 12, 256, "Output",ExpressionUUID->"bddf51dd-c220-4706-9a2d-00ac5596a91e"]
 }, Open  ]],
-Cell[641333, 11821, 744, 14, 122, "Text",ExpressionUUID->"e8cfb774-7c18-40f1-911e-272ee49982fd"]
+Cell[641613, 11838, 744, 14, 122, "Text",ExpressionUUID->"e8cfb774-7c18-40f1-911e-272ee49982fd"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[642114, 11840, 199, 3, 96, "Title",ExpressionUUID->"594c089a-2a08-427a-9863-5cfb4ffdab21"],
-Cell[642316, 11845, 568, 12, 144, "Text",ExpressionUUID->"3307e374-8968-4e1f-af51-00ee6dc3a190"],
-Cell[642887, 11859, 163, 3, 34, "Text",ExpressionUUID->"dca3299c-4a82-428a-90bb-b7c7b36622cc"],
-Cell[643053, 11864, 484, 8, 100, "Text",ExpressionUUID->"520be408-8f67-4d3d-8f30-2d5ed4ac644d"]
+Cell[642394, 11857, 199, 3, 96, "Title",ExpressionUUID->"594c089a-2a08-427a-9863-5cfb4ffdab21"],
+Cell[642596, 11862, 568, 12, 144, "Text",ExpressionUUID->"3307e374-8968-4e1f-af51-00ee6dc3a190"],
+Cell[643167, 11876, 163, 3, 34, "Text",ExpressionUUID->"dca3299c-4a82-428a-90bb-b7c7b36622cc"],
+Cell[643333, 11881, 484, 8, 100, "Text",ExpressionUUID->"520be408-8f67-4d3d-8f30-2d5ed4ac644d"]
 }, Open  ]]
 }
 ]
