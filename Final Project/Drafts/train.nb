@@ -1,0 +1,235 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='WolframDesktop 12.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       161,          7]
+NotebookDataLength[      9131,        227]
+NotebookOptionsPosition[      7933,        201]
+NotebookOutlinePosition[      8269,        216]
+CellTagsIndexPosition[      8226,        213]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"files0", " ", "=", " ", 
+   RowBox[{"FileNames", "[", 
+    RowBox[{
+    "\"\<*.en.0.txt\>\"", ",", " ", 
+     "\"\<Desktop/newsela_article_corpus/articles/\>\""}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"files1", "=", 
+   RowBox[{"FileNames", "[", 
+    RowBox[{
+    "\"\<*.en.1.txt\>\"", ",", " ", 
+     "\"\<Desktop/newsela_article_corpus/articles/\>\""}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"files2", "=", 
+   RowBox[{"FileNames", "[", 
+    RowBox[{
+    "\"\<*.en.2.txt\>\"", ",", " ", 
+     "\"\<Desktop/newsela_article_corpus/articles/\>\""}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"files3", "=", 
+   RowBox[{"FileNames", "[", 
+    RowBox[{
+    "\"\<*.en.3.txt\>\"", ",", " ", 
+     "\"\<Desktop/newsela_article_corpus/articles/\>\""}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"files4", "=", 
+   RowBox[{"FileNames", "[", 
+    RowBox[{
+    "\"\<*.en.4.txt\>\"", ",", " ", 
+     "\"\<Desktop/newsela_article_corpus/articles/\>\""}], "]"}]}], 
+  ";"}]}], "Input",
+ CellChangeTimes->{{3.770991658811496*^9, 3.770991670563849*^9}, {
+   3.771095946343919*^9, 3.771096003976018*^9}, {3.771096104763555*^9, 
+   3.7710961208030777`*^9}, 3.77109636679135*^9},
+ CellLabel->
+  "In[1644]:=",ExpressionUUID->"020b83da-4cee-46be-8503-62c2981f7705"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"corpus", "=", " ", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"Import", "[", "#", "]"}], "&"}], "/@", 
+    RowBox[{"files", "[", 
+     RowBox[{"[", 
+      RowBox[{"1", ";;", "5"}], "]"}], "]"}]}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.770991683779254*^9, 3.7709917135572147`*^9}, {
+   3.771068103939286*^9, 3.7710681160514593`*^9}, 3.771085519959833*^9, {
+   3.771085569965621*^9, 3.771085580672612*^9}},
+ CellLabel->
+  "In[1614]:=",ExpressionUUID->"ecab4f54-d1a9-4576-b275-fab44d58fd37"],
+
+Cell[BoxData[
+ RowBox[{"(*", 
+  RowBox[{"length", " ", "of", " ", "data"}], "*)"}]], "Input",
+ CellChangeTimes->{{3.771069251721702*^9, 
+  3.771069256746441*^9}},ExpressionUUID->"39c27300-46cf-497d-959c-\
+12bac87a4bb3"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"(", 
+  RowBox[{"files0", "//", "Length"}], ")"}]], "Input",
+ CellChangeTimes->{{3.771069262225259*^9, 3.771069266399898*^9}, {
+   3.7710818845488787`*^9, 3.7710818879948387`*^9}, {3.771082072067912*^9, 
+   3.771082072620872*^9}, 3.771096194599985*^9},
+ CellLabel->
+  "In[1649]:=",ExpressionUUID->"4d66fbf0-5d4e-4a6c-914d-b68fb70c32ae"],
+
+Cell[BoxData["1911"], "Output",
+ CellChangeTimes->{3.771082072943019*^9, 3.771096194933587*^9},
+ CellLabel->
+  "Out[1649]=",ExpressionUUID->"9b46c6ac-480c-4a93-b83a-cb970eb4a13d"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"metadata", " ", "=", " ", 
+   RowBox[{"Import", "[", 
+    RowBox[{
+    "\"\<Desktop/newsela_article_corpus/articles_metadata.csv\>\"", ",", " ", 
+     "\"\<Dataset\>\"", ",", 
+     RowBox[{"\"\<HeaderLines\>\"", "\[Rule]", "1"}]}], "]"}]}], 
+  ";"}]], "Input",
+ CellChangeTimes->{{3.771085963905246*^9, 3.771085975850214*^9}, {
+  3.7710860403643847`*^9, 3.771086103381283*^9}},
+ CellLabel->
+  "In[1633]:=",ExpressionUUID->"4ede0fb6-4e90-471f-8930-a345e7e4cad0"],
+
+Cell[BoxData[
+ RowBox[{"(*", 
+  RowBox[{"data", " ", 
+   RowBox[{"analysis", "/", "preprocessing"}]}], "*)"}]], "Input",
+ CellChangeTimes->{{3.771085432468273*^9, 
+  3.771085441773363*^9}},ExpressionUUID->"b82253d2-a16b-4077-abd2-\
+0e2204c3975e"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"tokenizedcorupus1", " ", "=", " ", 
+   RowBox[{"TextSentences", "@", 
+    RowBox[{"(", 
+     RowBox[{"corpus", "[", 
+      RowBox[{"[", "1", "]"}], "]"}], ")"}]}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"tokenizedcorupus2", " ", "=", " ", 
+   RowBox[{"TextSentences", "@", 
+    RowBox[{"(", 
+     RowBox[{"corpus", "[", 
+      RowBox[{"[", "2", "]"}], "]"}], ")"}]}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"randomSentences1", "=", "  ", 
+  RowBox[{"RandomSample", "[", 
+   RowBox[{"tokenizedcorupus1", ",", "10"}], "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{"randomSentences2", "=", "  ", 
+  RowBox[{"RandomSample", "[", 
+   RowBox[{"tokenizedcorupus2", ",", "10"}], "]"}]}]}], "Input",
+ CellChangeTimes->{{3.771085454286953*^9, 3.7710854758361177`*^9}, {
+  3.7710855290178347`*^9, 3.7710855293583*^9}, {3.7710856285530853`*^9, 
+  3.771085749244279*^9}, {3.771085808240679*^9, 3.771085833789577*^9}},
+ CellLabel->
+  "In[1627]:=",ExpressionUUID->"0b191440-6eeb-4926-af71-9ff4ac14fc56"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"Lew said that $10 note will be the first in the new series of \
+redesigned notes, all including images capturing the theme of democracy.\"\>",
+    ",", "\<\"She is also a symbol of the U.S. economy's transformation, \
+according to Justin Wolfers, a senior fellow at the Peterson Institute for \
+International Economics in Washington.\"\>", 
+   ",", "\<\"Treasury Secretary Jacob J. Lew announced the plans this week, \
+saying the all-male lineup on American money has gone on long enough.\"\>", 
+   ",", "\<\"A non-profit group called Women On 20s, formed to convince \
+President Barack Obama to put a woman's image on the $20 note, already has \
+done some polling.\"\>", 
+   ",", "\<\"She is favored by the Association of Junior Leagues \
+International Inc., an organization she belonged to in its early days.\"\>", 
+   ",", "\<\"The Labor secretary through the Great Depression.\"\>", 
+   ",", "\<\"Barbara Ortiz Howard, the founder of Women On 20s, said her \
+organization is fine with a woman on $10 rather than $20 notes.\"\>", 
+   ",", "\<\"The Treasury expects to unveil the new $10 bill in 2020, the \
+100th anniversary of the passage of the 19th Amendment, which gave women the \
+right to vote.\"\>", 
+   ",", "\<\"Either way, the goal of seeing a female on paper money by the \
+voting rights centennial is achieved, Howard said.\"\>", 
+   ",", "\<\"More than 600,000 people voted on Women on 20s list of 15 \
+candidates during a 10-week period.\"\>"}], "}"}]], "Output",
+ CellChangeTimes->{{3.771085656791327*^9, 3.771085750199856*^9}, {
+  3.7710858228812647`*^9, 3.77108583590622*^9}},
+ CellLabel->
+  "Out[1629]=",ExpressionUUID->"fb8e00a2-3e4f-43e5-ae59-c031baefe8fe"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"A former slave who worked to abolish slavery.\"\>", 
+   ",", "\<\"Her 1962 book \\\"Silent Spring\\\" is widely credited with \
+launching the modern environmental movement.\"\>", 
+   ",", "\<\"On May 12, the organization presented Obama with the \
+results.\"\>", 
+   ",", "\<\"After the woman is selected, the bill must be designed and then \
+printed.\"\>", ",", "\<\"## Harriet Tubman A Popular Contender\"\>", 
+   ",", "\<\"## More Currency Facelifts To Come\"\>", 
+   ",", "\<\"The department cannot specify when the new notes will be in use.\
+\"\>", ",", "\<\"Alexander Hamilton, the first Treasury secretary, replaced \
+President Andrew Jackson on the $10 bill.\"\>", 
+   ",", "\<\"The last changes of portraits on U.S. currency were between 1914 \
+and 1928, when four adjustments were made.\"\>", 
+   ",", "\<\"## Other Potential Candidates\"\>"}], "}"}]], "Output",
+ CellChangeTimes->{{3.771085656791327*^9, 3.771085750199856*^9}, {
+  3.7710858228812647`*^9, 3.771085835913105*^9}},
+ CellLabel->
+  "Out[1630]=",ExpressionUUID->"34372a8e-aaf2-4fb1-882c-82e49b910348"]
+}, Open  ]]
+},
+WindowSize->{914, 855},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+FrontEndVersion->"12.0 for Mac OS X x86 (64-bit) (April 11, 2019)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[561, 20, 1374, 40, 115, "Input",ExpressionUUID->"020b83da-4cee-46be-8503-62c2981f7705"],
+Cell[1938, 62, 522, 13, 30, "Input",ExpressionUUID->"ecab4f54-d1a9-4576-b275-fab44d58fd37"],
+Cell[2463, 77, 219, 5, 30, "Input",ExpressionUUID->"39c27300-46cf-497d-959c-12bac87a4bb3"],
+Cell[CellGroupData[{
+Cell[2707, 86, 359, 7, 30, "Input",ExpressionUUID->"4d66fbf0-5d4e-4a6c-914d-b68fb70c32ae"],
+Cell[3069, 95, 179, 3, 34, "Output",ExpressionUUID->"9b46c6ac-480c-4a93-b83a-cb970eb4a13d"]
+}, Open  ]],
+Cell[3263, 101, 496, 12, 30, "Input",ExpressionUUID->"4ede0fb6-4e90-471f-8930-a345e7e4cad0"],
+Cell[3762, 115, 246, 6, 30, "Input",ExpressionUUID->"b82253d2-a16b-4077-abd2-0e2204c3975e"],
+Cell[CellGroupData[{
+Cell[4033, 125, 1037, 23, 94, "Input",ExpressionUUID->"0b191440-6eeb-4926-af71-9ff4ac14fc56"],
+Cell[5073, 150, 1724, 27, 371, "Output",ExpressionUUID->"fb8e00a2-3e4f-43e5-ae59-c031baefe8fe"],
+Cell[6800, 179, 1117, 19, 203, "Output",ExpressionUUID->"34372a8e-aaf2-4fb1-882c-82e49b910348"]
+}, Open  ]]
+}
+]
+*)
+
