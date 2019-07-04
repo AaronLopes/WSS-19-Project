@@ -1,0 +1,378 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='WolframDesktop 12.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       161,          7]
+NotebookDataLength[     14938,        370]
+NotebookOptionsPosition[     13539,        342]
+NotebookOutlinePosition[     13877,        357]
+CellTagsIndexPosition[     13834,        354]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+  "folder", " ", "=", " ", 
+   "\"\</Users/AaronLopes/Desktop/newsela_article_corpus/articles/\>\""}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"metadata", " ", "=", " ", 
+    RowBox[{"Import", "[", 
+     RowBox[{
+     "\"\</Users/AaronLopes/Desktop/newsela_article_corpus/articles_metadata.\
+csv\>\"", ",", "\"\<Dataset\>\"", ",", 
+      RowBox[{"\"\<HeaderLines\>\"", "\[Rule]", "1"}]}], "]"}]}], ";"}], 
+  "\[IndentingNewLine]", 
+  RowBox[{"(*", 
+   RowBox[{
+    RowBox[{"metadata", "[", 
+     RowBox[{"Select", "[", 
+      RowBox[{
+       RowBox[{"#language", "\[Equal]", "\"\<en\>\""}], "&"}], "]"}], "]"}], 
+    "[", 
+    RowBox[{"GroupBy", "[", "\"\<gradelevel\>\"", "]"}], "]"}], 
+   "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"allFileNames", " ", "=", " ", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"metadata", "[", 
+      RowBox[{"Select", "[", 
+       RowBox[{
+        RowBox[{"#language", "\[Equal]", "\"\<en\>\""}], "&"}], "]"}], "]"}], 
+     "[", 
+     RowBox[{"All", ",", " ", "\"\<filename\>\""}], "]"}], " ", "//", 
+    "Normal"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"rand", " ", "=", " ", 
+    RowBox[{"allFileNames", "[", 
+     RowBox[{"[", 
+      RowBox[{"RandomInteger", "[", 
+       RowBox[{"Length", "[", "allFileNames", "]"}], "]"}], "]"}], "]"}]}], 
+   ";"}], "\[IndentingNewLine]", 
+  RowBox[{"(*", 
+   RowBox[{
+   "find", " ", "better", " ", "operation", " ", "for", " ", "this", " ", 
+    "portion"}], "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"h", " ", "=", " ", 
+   RowBox[{
+    RowBox[{"StringSplit", "[", 
+     RowBox[{"rand", ",", "\"\<.\>\""}], "]"}], "[", 
+    RowBox[{"[", "1", "]"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"lowLevelFileNames", "=", 
+   RowBox[{"Lookup", "[", 
+    RowBox[{
+     RowBox[{"Lookup", "[", 
+      RowBox[{
+       RowBox[{"Normal", "@", 
+        RowBox[{"GroupBy", "[", 
+         RowBox[{"metadata", ",", " ", 
+          RowBox[{
+           RowBox[{"#gradelevel", "\[LessEqual]", "6.0"}], "&"}]}], "]"}]}], 
+       ",", "False"}], "]"}], ",", " ", "\"\<filename\>\""}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"highLevelFileNames", "=", 
+    RowBox[{"Lookup", "[", 
+     RowBox[{
+      RowBox[{"Lookup", "[", 
+       RowBox[{
+        RowBox[{"Normal", "@", 
+         RowBox[{"GroupBy", "[", 
+          RowBox[{"metadata", ",", " ", 
+           RowBox[{
+            RowBox[{"#gradelevel", "\[LessEqual]", "6.0"}], "&"}]}], "]"}]}], 
+        ",", "True"}], "]"}], ",", " ", "\"\<filename\>\""}], "]"}]}], ";"}], 
+  "\[IndentingNewLine]", 
+  RowBox[{"(*", 
+   RowBox[{
+    RowBox[{
+    "Search", " ", "for", " ", "filename", " ", "in", " ", "low", " ", 
+     "level", " ", "category"}], ",", " ", 
+    RowBox[{"construct", " ", "filepath"}]}], "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"lowtext", " ", "=", " ", 
+   RowBox[{"Select", "[", 
+    RowBox[{"lowLevelFileNames", ",", 
+     RowBox[{"StringMatchQ", "[", 
+      RowBox[{
+       RowBox[{"h", "<>", "\"\<.en.\>\""}], "~~", "DigitCharacter", "~~", 
+       "\"\<.txt\>\""}], "]"}]}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"lt", "=", " ", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"StringJoin", "[", 
+      RowBox[{"folder", ",", " ", "#"}], "]"}], " ", "&"}], "/@", 
+    "lowtext"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"hightext", " ", "=", " ", 
+   RowBox[{"Select", "[", 
+    RowBox[{"highLevelFileNames", ",", 
+     RowBox[{"StringMatchQ", "[", 
+      RowBox[{
+       RowBox[{"h", "<>", "\"\<.en.\>\""}], "~~", "DigitCharacter", "~~", 
+       "\"\<.txt\>\""}], "]"}]}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"ht", " ", "=", " ", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"StringJoin", "[", 
+      RowBox[{"folder", ",", "#"}], "]"}], " ", "&"}], "/@", "hightext"}]}], 
+  ";", 
+  RowBox[{"randCorpusHigh", "=", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"Import", "[", "#", "]"}], "&"}], "/@", "ht"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"randCorpusLow", "=", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"Import", "[", "#", "]"}], " ", "&"}], "/@", "lt"}]}], 
+  ";"}]}], "Input",
+ CellChangeTimes->{{3.7711735419315243`*^9, 3.7711736465906353`*^9}, {
+   3.77117367872687*^9, 3.771173792785554*^9}, {3.771173848209682*^9, 
+   3.771173864915929*^9}, {3.7711739178264847`*^9, 3.771173928876687*^9}, {
+   3.7711739834170637`*^9, 3.7711740842090693`*^9}, 3.771174161051693*^9, {
+   3.771174206476468*^9, 3.7711743501870832`*^9}, {3.771174572317052*^9, 
+   3.7711746256311274`*^9}, {3.771174671092042*^9, 3.7711747489002867`*^9}, {
+   3.7711748104786777`*^9, 3.771174815591544*^9}, {3.7711950169076757`*^9, 
+   3.77119508035007*^9}, {3.771195110631175*^9, 3.771195112492175*^9}},
+ CellLabel->"In[63]:=",ExpressionUUID->"bc87a1f0-63a7-47a9-9d28-a0d28b582e08"],
+
+Cell[BoxData[
+ RowBox[{"(*", 
+  RowBox[{
+   RowBox[{"compare", " ", "sentence", " ", "structure"}], ",", " ", "plot"}],
+   "*)"}]], "Input",
+ CellChangeTimes->{{3.771173797177981*^9, 3.771173837255045*^9}, {
+  3.771174919980122*^9, 
+  3.771174928155512*^9}},ExpressionUUID->"00ba864b-c7a9-41fc-b810-\
+da4a18b83224"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"lowsentences", " ", "=", " ", 
+  RowBox[{"TextSentences", "[", 
+   RowBox[{"randCorpusLow", ",", "5"}], "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{"highsentences", " ", "=", " ", 
+  RowBox[{"TextSentences", "[", 
+   RowBox[{"randCorpusHigh", ",", "5"}], "]"}]}]}], "Input",
+ CellChangeTimes->{{3.771174824183956*^9, 3.771174824826664*^9}, {
+  3.77117487955536*^9, 3.771174909568578*^9}, {3.7711768003497677`*^9, 
+  3.7711768027800627`*^9}},
+ CellLabel->"In[75]:=",ExpressionUUID->"dc399f5c-a5ec-49e3-82e2-7f4b8a59b10b"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"\<\"WASHINGTON \[LongDash] To lawmakers and others arguing that \
+replacing the $1 bill with a $1 coin would save the government money, the \
+Federal Reserve says, \\\"Don't bet on it.\\\"\"\>", 
+     ",", "\<\"A new analysis by Fed staffers said the old-fashioned \
+greenback is more durable than people realize and replacing it with a $1 \
+coin, which is more expensive to produce, would cost the government $1.2 \
+billion over 30 years.\"\>", 
+     ",", "\<\"\\\"Based on our analysis of the benefits and costs of a \
+currency-to-coin transition, we believe that the $1 Federal Reserve note \
+should remain in circulation and not be replaced with a $1 coin,\\\" \
+concluded the authors of a Fed staff working paper released this week.\"\>", 
+     ",", "\<\"Some in Congress are pushing the government to replace the $1 \
+dollar bill with the longer-lasting $1 coin.\"\>", 
+     ",", "\<\"Several countries, including Canada and Britain, and the \
+eurozone have replaced small-denomination paper currency with coins.\"\>"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"WASHINGTON \[LongDash] To lawmakers and others arguing that \
+replacing the $1 bill with a $1 coin would save the government money, the \
+Federal Reserve says, \\\"Don't bet on it.\\\"\"\>", 
+     ",", "\<\"The Federal Reserve is the central bank of the United States., \
+and it controls the country's money.\"\>", 
+     ",", "\<\"A new analysis by the Fed said the old-fashioned greenback is \
+more durable than people realize.\"\>", 
+     ",", "\<\"And replacing it with a dollar coin would cost the government \
+$1.2 billion over 30 years, because coins are expensive to produce.\"\>", 
+     ",", "\<\"The Fed study looked at the benefits and costs of moving from \
+paper money to coins.\"\>"}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{
+  3.7711749118075857`*^9, 3.7711752728073807`*^9, 3.771175314833557*^9, 
+   3.7711755463791847`*^9, 3.7711768032161827`*^9, {3.771176945089445*^9, 
+   3.7711769505450773`*^9}, 3.771176991529759*^9, 3.7711846866608257`*^9, 
+   3.771195117532443*^9},
+ CellLabel->"Out[75]=",ExpressionUUID->"3717eb31-e644-47b7-b859-e5997314b152"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"\<\"WASHINGTON \[LongDash] To lawmakers and others arguing that \
+replacing the $1 bill with a $1 coin would save the government money, the \
+Federal Reserve says, \\\"Don't bet on it.\\\"\"\>", 
+     ",", "\<\"The Federal Reserve is the central bank of the United \
+States.\"\>", ",", "\<\"And it controls the country's money.\"\>", 
+     ",", "\<\"A new study by the Fed said the old-fashioned greenback is \
+more durable than people realize.\"\>", 
+     ",", "\<\"And replacing it with a dollar coin would cost the government \
+$1.2 billion over 30 years.\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"WASHINGTON \[LongDash] Some lawmakers in Washington, D.C., \
+want to get rid of the $1 bill.\"\>", 
+     ",", "\<\"They want people to use $1 coins instead.\"\>", 
+     ",", "\<\"The reason is that coins last longer than paper money.\"\>", 
+     ",", "\<\"They say it would save the government money.\"\>", 
+     ",", "\<\"But, the Federal Reserve says, \\\"Don't bet on it.\\\"\"\>"}],
+     "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"WASHINGTON \[LongDash] Some leaders in Washington, D.C., \
+want to get rid of the $1 bill.\"\>", 
+     ",", "\<\"They want people to use $1 coins instead.\"\>", 
+     ",", "\<\"They say coins last longer, and it would save the government \
+money.\"\>", 
+     ",", "\<\"But, the Federal Reserve says, \\\"Don't bet on it.\\\"\"\>", 
+     ",", "\<\"The Federal Reserve is the bank of the U.S. government.\"\>"}],
+     "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{
+  3.7711749118075857`*^9, 3.7711752728073807`*^9, 3.771175314833557*^9, 
+   3.7711755463791847`*^9, 3.7711768032161827`*^9, {3.771176945089445*^9, 
+   3.7711769505450773`*^9}, 3.771176991529759*^9, 3.7711846866608257`*^9, 
+   3.7711951175973167`*^9},
+ CellLabel->"Out[76]=",ExpressionUUID->"555f9489-8d94-4deb-9394-17f6f55e32ed"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"(*", 
+  RowBox[{
+   RowBox[{"get", " ", "word", " ", "averages"}], ",", " ", 
+   RowBox[{"sentence", " ", "averages", " ", "for", " ", 
+    RowBox[{"high", "/", "low"}], " ", "rand", " ", "corpus"}]}], 
+  "*)"}]], "Input",
+ CellChangeTimes->{{3.771174930759439*^9, 3.771174960743012*^9}, {
+  3.771175024613002*^9, 
+  3.771175027071734*^9}},ExpressionUUID->"8b69a751-99f2-41bf-8d7f-\
+a37b7fd51baf"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    RowBox[{"sentenceAvg", "[", "corpus_", "]"}], ":=", 
+    RowBox[{"N", "[", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"Total", "[", 
+        RowBox[{"Length", "/@", 
+         RowBox[{"TextSentences", "[", "corpus", "]"}]}], "]"}], "/", 
+       RowBox[{"Length", "[", "corpus", "]"}]}], ",", "3"}], "]"}]}], ";"}], 
+  " "}]], "Input",
+ CellChangeTimes->{{3.7711753259953136`*^9, 3.771175366883306*^9}, {
+  3.771175458080633*^9, 3.771175469511487*^9}, {3.7711755178259172`*^9, 
+  3.7711755625664988`*^9}, {3.7711764044014*^9, 3.771176427999063*^9}, {
+  3.771176623447489*^9, 3.771176723055378*^9}},
+ CellLabel->
+  "In[641]:=",ExpressionUUID->"7ea20e74-f152-458e-a986-967a212d4bc1"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"wordAvg", "[", "corpus_", "]"}], " ", ":=", " ", 
+   RowBox[{"N", "[", 
+    RowBox[{
+     RowBox[{"Total", "[", 
+      RowBox[{
+       RowBox[{"WordCount", "[", "corpus", "]"}], "/", 
+       RowBox[{"Length", "[", "corpus", "]"}]}], "]"}], ",", "5"}], "]"}]}], 
+  ";"}]], "Input",
+ CellChangeTimes->{{3.771175095975051*^9, 3.77117510315257*^9}, {
+  3.771175199789173*^9, 3.771175236458148*^9}, {3.7711764767441177`*^9, 
+  3.771176480798047*^9}, {3.771176511463561*^9, 3.771176535862076*^9}, {
+  3.771176576278743*^9, 3.771176598130699*^9}, {3.771176674760818*^9, 
+  3.7711766754491177`*^9}, {3.771176715801238*^9, 3.771176731606243*^9}},
+ CellLabel->
+  "In[642]:=",ExpressionUUID->"252a3d59-7dd6-4115-b731-46220d6c43e7"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"extractStats", "[", "randCorpusLow", "]"}]], "Input",
+ CellChangeTimes->{{3.77118476417371*^9, 3.77118476761628*^9}},
+ CellLabel->"In[40]:=",ExpressionUUID->"3641cabe-a53d-4637-a374-88ed52c8b845"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\[LeftAssociation]", 
+   RowBox[{
+    RowBox[{"\<\"word count\"\>", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{"804", ",", "889"}], "}"}]}], ",", 
+    RowBox[{"\<\"sentence count\"\>", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{"46", ",", "56"}], "}"}]}]}], "\[RightAssociation]"}], 
+  "}"}]], "Output",
+ CellChangeTimes->{3.771184829375578*^9},
+ CellLabel->"Out[40]=",ExpressionUUID->"a53f3a74-77be-481a-9ab2-dbf4d0da034c"]
+}, Open  ]],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.7711846342065783`*^9, 3.771184643450287*^9}, {
+  3.771184673492963*^9, 
+  3.771184679480075*^9}},ExpressionUUID->"51715d54-7584-4899-9bbc-\
+cbb55523e666"],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.771184461982586*^9, 
+  3.771184462632416*^9}},ExpressionUUID->"e2e962ca-a89c-4b7a-a65a-\
+5650ef033968"]
+},
+WindowSize->{1149, 853},
+WindowMargins->{{Automatic, 21}, {0, Automatic}},
+FrontEndVersion->"12.0 for Mac OS X x86 (64-bit) (April 11, 2019)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[561, 20, 4915, 135, 325, "Input",ExpressionUUID->"bc87a1f0-63a7-47a9-9d28-a0d28b582e08"],
+Cell[5479, 157, 315, 8, 30, "Input",ExpressionUUID->"00ba864b-c7a9-41fc-b810-da4a18b83224"],
+Cell[CellGroupData[{
+Cell[5819, 169, 543, 10, 52, "Input",ExpressionUUID->"dc399f5c-a5ec-49e3-82e2-7f4b8a59b10b"],
+Cell[6365, 181, 2222, 37, 350, "Output",ExpressionUUID->"3717eb31-e644-47b7-b859-e5997314b152"],
+Cell[8590, 220, 1915, 35, 245, "Output",ExpressionUUID->"555f9489-8d94-4deb-9394-17f6f55e32ed"]
+}, Open  ]],
+Cell[10520, 258, 421, 10, 30, "Input",ExpressionUUID->"8b69a751-99f2-41bf-8d7f-a37b7fd51baf"],
+Cell[10944, 270, 732, 18, 30, "Input",ExpressionUUID->"7ea20e74-f152-458e-a986-967a212d4bc1"],
+Cell[11679, 290, 767, 17, 30, "Input",ExpressionUUID->"252a3d59-7dd6-4115-b731-46220d6c43e7"],
+Cell[CellGroupData[{
+Cell[12471, 311, 220, 3, 30, "Input",ExpressionUUID->"3641cabe-a53d-4637-a374-88ed52c8b845"],
+Cell[12694, 316, 468, 12, 37, "Output",ExpressionUUID->"a53f3a74-77be-481a-9ab2-dbf4d0da034c"]
+}, Open  ]],
+Cell[13177, 331, 203, 4, 30, "Input",ExpressionUUID->"51715d54-7584-4899-9bbc-cbb55523e666"],
+Cell[13383, 337, 152, 3, 30, "Input",ExpressionUUID->"e2e962ca-a89c-4b7a-a65a-5650ef033968"]
+}
+]
+*)
+
