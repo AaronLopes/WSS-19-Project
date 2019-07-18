@@ -1,0 +1,226 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='WolframDesktop 12.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       161,          7]
+NotebookDataLength[      9273,        218]
+NotebookOptionsPosition[      7951,        189]
+NotebookOutlinePosition[      8295,        204]
+CellTagsIndexPosition[      8252,        201]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"text1", "=", 
+   RowBox[{
+   "Import", "@", 
+    "\"\</Users/AaronLopes/Desktop/newsela_article_corpus/articles/obama-\
+everglades.en.1.txt\>\""}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.771330182334877*^9, 3.771330187746393*^9}},
+ CellLabel->"In[2]:=",ExpressionUUID->"43c499d2-8a09-4d7f-aa10-5fa383d9305c"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"text2", "=", 
+   RowBox[{
+   "Import", "@", 
+    "\"\</Users/AaronLopes/Desktop/newsela_article_corpus/articles/obama-\
+everglades.en.3.txt\>\""}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.771330189597427*^9, 3.771330197681868*^9}},
+ CellLabel->"In[3]:=",ExpressionUUID->"49e8859d-6f70-4694-bff8-86e4c7beaedf"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"sent1", "=", 
+   RowBox[{"TextSentences", "[", "text1", "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"sent2", "=", 
+   RowBox[{"TextSentences", "[", "text2", "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"positions", " ", "=", " ", 
+   RowBox[{"Sort", "@", 
+    RowBox[{"RandomInteger", "[", 
+     RowBox[{
+      RowBox[{"Min", "[", 
+       RowBox[{
+        RowBox[{"Length", "[", "sent1", "]"}], ",", 
+        RowBox[{"Length", "[", "sent2", "]"}]}], "]"}], ",", " ", "10"}], 
+     "]"}]}]}], ";"}]}], "Input",
+ CellChangeTimes->{{3.771330201644315*^9, 3.7713302817423964`*^9}, {
+   3.7713304849292707`*^9, 3.771330487103894*^9}, 3.7713307957086782`*^9, {
+   3.7715246619430943`*^9, 3.771524664279152*^9}},
+ CellLabel->"In[8]:=",ExpressionUUID->"2bc9291d-2daa-4783-a6b7-13f5c6dee468"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["positions"], "Input",
+ CellLabel->"In[11]:=",ExpressionUUID->"4d303865-f4c0-4cf5-90cd-b7e4ffa089a6"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+  "1", ",", "7", ",", "10", ",", "14", ",", "19", ",", "20", ",", "22", ",", 
+   "29", ",", "36", ",", "46"}], "}"}]], "Output",
+ CellChangeTimes->{
+  3.771330382340906*^9, 3.7713304908173323`*^9, {3.7713392331908607`*^9, 
+   3.771339250264593*^9}, 3.771350984090749*^9, {3.7715246498672*^9, 
+   3.771524667990918*^9}},
+ CellLabel->"Out[11]=",ExpressionUUID->"4d839e43-edc4-4fdd-80e5-e5f66a944c6c"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"hash", " ", "=", " ", 
+   RowBox[{"Characters", "[", "\"\<#;\>\"", "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.771591491611938*^9, 
+  3.7715915157180862`*^9}},ExpressionUUID->"a2d65bf0-f895-4d1d-8f72-\
+958e29ac1214"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Grid", "[", 
+  RowBox[{
+   RowBox[{"Transpose", "[", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"sent1", "[", 
+       RowBox[{"[", "positions", "]"}], "]"}], ",", 
+      RowBox[{"sent2", "[", 
+       RowBox[{"[", "positions", "]"}], "]"}]}], "}"}], "]"}], ",", " ", 
+   RowBox[{"Frame", "\[Rule]", " ", "All"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.771330287014256*^9, 3.771330320018573*^9}, {
+   3.771330362006475*^9, 3.771330367822299*^9}, {3.771330555067614*^9, 
+   3.771330570029269*^9}, {3.7713380242527447`*^9, 3.771338032728571*^9}, {
+   3.7713380994915533`*^9, 3.7713382762677794`*^9}, 3.771352298391589*^9, 
+   3.77152588525482*^9},
+ CellLabel->"In[44]:=",ExpressionUUID->"59982085-98c6-4ea7-9fd2-6e6b3c8617af"],
+
+Cell[BoxData[
+ TagBox[GridBox[{
+    {"\<\"MIAMI, Fla. \[LongDash] President Barack Obama on Wednesday paid \
+his first visit to the Everglades to deliver an Earth Day speech.\"\>", \
+"\<\"MIAMI, Fla. \[LongDash] President Barack Obama spoke about climate \
+change during his first visit to the Florida Everglades Wednesday.\"\>"},
+    {"\<\"\\\"Climate change can no longer be denied \[Ellipsis] cannot be \
+edited out of the conversation,\\\" Obama said.\"\>", "\<\"But his decision \
+to give the speech in South Florida clearly had another purpose.\"\>"},
+    {"\<\"Before his speech, the president and park rangers walked the \
+Anhinga Trail, the park's most popular tourist stop.\"\>", "\<\"However, \
+important scientific research says that climate change is mainly caused by \
+pollution from fuels like oil and gas.\"\>"},
+    {"\<\"\\\"I'm told this is a good thing,\\\" he joked.\"\>", "\<\"The \
+Republican governor has been criticized for ordering state workers not to use \
+the term \\\"climate change.\\\"\"\>"},
+    {"\<\"Douglas is a pioneering preservationist whose book, \\\"Everglades: \
+River of Grass,\\\" inspired restoration efforts.\"\>", "\<\"The president \
+was also in South Florida to speak about his role in solving environmental \
+problems.\"\>"},
+    {"\<\"## In Senator Rubio's \\\"Backyard\\\"\"\>", "\<\"His government \
+has limited the pollution which causes climate change.\"\>"},
+    {"\<\"It could pressure Republicans to debate the subject, which is a \
+touchy one for the Republican Party.\"\>", "\<\"Obama was expected to speak \
+about new environmental efforts in four areas of the country.\"\>"},
+    {"\<\"The state has invested $1.9 billion in the Comprehensive Everglades \
+Restoration Project, nearly a billion dollars more than the federal \
+government.\"\>", "\<\"## Restoring The Everglades\"\>"},
+    {"\<\"Obama's visit comes at a critical time for Everglades restoration, \
+which has dragged on for nearly 15 years.\"\>", "\<\"\\\"President Obama \
+needs to live up to his commitment on the Everglades,\\\" Scott said.\"\>"},
+    {"\<\"She said awareness of the slow death of the Everglades could be a \
+model for other natural areas endangered by climate change around the \
+world.\"\>", "\<\"The United Nations group predicts increases in temperature, \
+sea level and ocean salt.\"\>"}
+   },
+   AutoDelete->False,
+   GridBoxFrame->{"Columns" -> {{True}}, "Rows" -> {{True}}},
+   GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+  "Grid"]], "Output",
+ CellChangeTimes->{3.771525885587078*^9},
+ CellLabel->"Out[44]=",ExpressionUUID->"71ec125c-e5d0-4406-9382-96707ff8ce0a"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"StringCases", "[", 
+   RowBox[{"text1", ",", " ", 
+    RowBox[{"RegularExpression", "[", "\"\<[[:upper:]]{2,}\>\"", "]"}]}], 
+   "]"}], ";"}]], "Input",
+ CellChangeTimes->{{3.771352504023357*^9, 3.7713525250729313`*^9}, {
+  3.771524574676708*^9, 3.7715245812081127`*^9}, {3.771524618122788*^9, 
+  3.771524635649126*^9}, {3.771524696593689*^9, 3.7715247532313747`*^9}, {
+  3.771524903706964*^9, 3.771524910376851*^9}, {3.771524946210505*^9, 
+  3.77152496456714*^9}, {3.771525159114571*^9, 3.771525243973082*^9}, {
+  3.771525298067257*^9, 3.771525302737138*^9}, {3.771525339500719*^9, 
+  3.771525360132819*^9}, {3.771525933473057*^9, 3.771525938896421*^9}},
+ CellLabel->"In[46]:=",ExpressionUUID->"177321b5-3fc0-414b-a75f-f7f817fc4247"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"StringCases", "[", 
+  RowBox[{"text1", ",", " ", 
+   RowBox[{"RegularExpression", "[", "\"\<([[:upper:]])\>\"", "]"}]}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.7715259396795893`*^9, 3.7715259572193203`*^9}, {
+  3.771525989737815*^9, 3.771525996954368*^9}, {3.771526111460291*^9, 
+  3.7715261453091784`*^9}, {3.771526241118819*^9, 
+  3.7715263159406967`*^9}},ExpressionUUID->"86f3dfa9-7132-4fa8-be14-\
+fab28b53fef2"],
+
+Cell[BoxData[
+ RowBox[{"{", "}"}]], "Output",
+ CellChangeTimes->{{3.7715259911001987`*^9, 3.7715259972479897`*^9}, {
+  3.771526121585353*^9, 3.77152614560258*^9}, {3.771526246310883*^9, 
+  3.771526287746984*^9}},
+ CellLabel->"Out[58]=",ExpressionUUID->"7eace20e-30f2-4a75-8a74-eef4295c02c0"]
+}, Open  ]]
+},
+WindowSize->{960, 1035},
+WindowMargins->{{Automatic, -1920}, {-111, Automatic}},
+FrontEndVersion->"12.0 for Mac OS X x86 (64-bit) (April 11, 2019)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[561, 20, 345, 8, 30, "Input",ExpressionUUID->"43c499d2-8a09-4d7f-aa10-5fa383d9305c"],
+Cell[909, 30, 345, 8, 30, "Input",ExpressionUUID->"49e8859d-6f70-4694-bff8-86e4c7beaedf"],
+Cell[1257, 40, 856, 22, 73, "Input",ExpressionUUID->"2bc9291d-2daa-4783-a6b7-13f5c6dee468"],
+Cell[CellGroupData[{
+Cell[2138, 66, 114, 1, 30, "Input",ExpressionUUID->"4d303865-f4c0-4cf5-90cd-b7e4ffa089a6"],
+Cell[2255, 69, 438, 9, 34, "Output",ExpressionUUID->"4d839e43-edc4-4fdd-80e5-e5f66a944c6c"]
+}, Open  ]],
+Cell[2708, 81, 255, 6, 30, "Input",ExpressionUUID->"a2d65bf0-f895-4d1d-8f72-958e29ac1214"],
+Cell[CellGroupData[{
+Cell[2988, 91, 752, 16, 30, "Input",ExpressionUUID->"59982085-98c6-4ea7-9fd2-6e6b3c8617af"],
+Cell[3743, 109, 2647, 41, 673, "Output",ExpressionUUID->"71ec125c-e5d0-4406-9382-96707ff8ce0a"]
+}, Open  ]],
+Cell[6405, 153, 769, 13, 30, "Input",ExpressionUUID->"177321b5-3fc0-414b-a75f-f7f817fc4247"],
+Cell[CellGroupData[{
+Cell[7199, 170, 442, 9, 30, "Input",ExpressionUUID->"86f3dfa9-7132-4fa8-be14-fab28b53fef2"],
+Cell[7644, 181, 291, 5, 34, "Output",ExpressionUUID->"7eace20e-30f2-4a75-8a74-eef4295c02c0"]
+}, Open  ]]
+}
+]
+*)
+
